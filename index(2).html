@@ -1,0 +1,1420 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marco S. Zanini</title>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Marco S. Zanini">
+<meta property="og:title" content="Marco S. Zanini">
+<meta property="og:description" content="Multidisciplinary creative based in Milano — graphic design, creative direction, art direction, photography and film.">
+<meta property="og:url" content="https://marcoszanini.github.io/">
+<meta property="og:image" content="https://marcoszanini.github.io/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Marco S. Zanini — two ribbons of project images crossing above the name">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Marco S. Zanini">
+<meta name="twitter:description" content="Multidisciplinary creative based in Milano — graphic design, creative direction, art direction, photography and film.">
+<meta name="twitter:image" content="https://marcoszanini.github.io/og.jpg">
+<meta name="description" content="Marco S. Zanini — multidisciplinary creative based in Milano. Graphic design, creative direction, art direction, photography & post-production, film.">
+<meta name="color-scheme" content="light dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Martian+Mono:wdth,wght@75..112.5,100..800&display=swap" rel="stylesheet">
+<script>(function(){var d=document.documentElement,t;try{t=localStorage.getItem('mz-theme')}catch(e){}if(t!=='light'&&t!=='dark')t='light';d.setAttribute('data-theme',t);d.setAttribute('lang','en')})();</script>
+<style>
+:root{--pad:clamp(16px,2.5vw,40px);--sans:"Archivo","Helvetica Neue",Helvetica,Arial,sans-serif;--mono:"Martian Mono",ui-monospace,SFMono-Regular,Menlo,monospace;--ease:cubic-bezier(.16,1,.3,1);--io:cubic-bezier(.76,0,.24,1);--rad:clamp(16px,1.8vw,28px);--fw:clamp(170px,15vw,240px)}
+:root[data-theme=light]{--bg:#efeee9;--bg2:#e2e0da;--fg:#0f0f0e;--red:#d13a1c;--grain:.04;--mute:#6b6963;--line:rgba(15,15,14,.15)}
+:root[data-theme=dark]{--bg:#0e0e0d;--bg2:#1b1b19;--fg:#ebe9e3;--red:#ef4d2c;--grain:.06;--mute:#8f8d86;--line:rgba(235,233,227,.14)}
+.work{--bg:#121211;--fg:#efeee9;--red:#ef4d2c}
+[data-theme=dark] .work{--bg:#efeee9;--fg:#0f0f0e;--red:#d13a1c}
+@supports (color:color-mix(in srgb,red,blue)){:root,.pj,.work{--mute:color-mix(in srgb,var(--fg) 55%,var(--bg));--line:color-mix(in srgb,var(--fg) 15%,transparent);--bg2:color-mix(in srgb,var(--fg) 7%,var(--bg))}}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:16px;line-height:1.45;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-x:hidden;transition:background-color .9s var(--ease),color .9s var(--ease)}
+html.no-tr *,html.no-tr *::before,html.no-tr *::after{transition:none!important}
+body.locked{overflow:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;text-align:inherit;text-transform:inherit;letter-spacing:inherit}
+ul{list-style:none}
+::selection{background:var(--red);color:#fff}
+.serif{font-weight:200}
+.red{color:var(--red)}
+.label{font-family:var(--mono);font-size:10px;font-weight:400;letter-spacing:.02em;line-height:1.6;text-transform:uppercase;color:var(--mute)}
+.label b{color:var(--red);font-weight:400}
+.disp{font-stretch:118%;font-weight:320;letter-spacing:-.045em;line-height:.84;text-transform:uppercase}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--red);margin-right:8px;vertical-align:1px;animation:pulse 2.4s ease-in-out infinite}
+@keyframes pulse{50%{transform:scale(.5);opacity:.6}}
+
+/* theme switch: circular reveal */
+::view-transition-old(root),::view-transition-new(root){animation:none;mix-blend-mode:normal}
+::view-transition-new(root){animation:vt .95s var(--ease) both}
+@keyframes vt{from{clip-path:circle(0 at var(--vx,50%) var(--vy,50%))}to{clip-path:circle(160vmax at var(--vx,50%) var(--vy,50%))}}
+
+.grain{position:fixed;inset:-50%;z-index:200;pointer-events:none;opacity:var(--grain);background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");animation:grain 1s steps(6) infinite}
+[data-theme=light] .grain{mix-blend-mode:multiply}
+@keyframes grain{0%{transform:translate(0,0)}20%{transform:translate(-4%,3%)}40%{transform:translate(3%,-5%)}60%{transform:translate(-6%,-2%)}80%{transform:translate(5%,4%)}100%{transform:translate(0,0)}}
+
+/* shutter: inverted copy revealed by two bars closing from top and bottom */
+.sh{position:relative;isolation:isolate}
+.sh>.inv{position:absolute;inset:0;z-index:2;pointer-events:none;background:var(--fg);color:var(--bg);clip-path:polygon(0 0,100% 0,100% 0,0 0,0 100%,100% 100%,100% 100%,0 100%);transition:clip-path .62s var(--ease)}
+.sh:hover>.inv,.sh:focus-visible>.inv,.sh.act>.inv{clip-path:polygon(0 0,100% 0,100% 50.6%,0 50.6%,0 49.4%,100% 49.4%,100% 100%,0 100%)}
+.inv .label,.inv .n,.inv .c,.inv .d,.inv .y,.inv .dd,.inv .dn{color:inherit!important;opacity:.62}
+.inv .red{color:var(--red)}
+
+/* loader */
+.loader{position:fixed;inset:0;z-index:300;background:var(--bg);color:var(--fg);padding:var(--pad);display:grid;grid-template-rows:auto 1fr auto;clip-path:inset(0 0 0 0);transition:clip-path 1.1s var(--io)}
+.loader.out{clip-path:inset(0 0 100% 0)}
+.loader .top{display:flex;justify-content:space-between;gap:20px}
+.pills{display:flex;align-items:center;justify-content:center;perspective:900px}
+.pills i{width:clamp(26px,2.4vw,38px);height:clamp(78px,7.2vw,112px);margin:0 -5px;border-radius:99px;background:var(--bg2) center/cover no-repeat;transform:rotateY(88deg);transition:transform 1.1s var(--ease)}
+.pills i.on{transform:rotateY(-14deg)}
+.loader .bot{display:flex;justify-content:space-between;align-items:flex-end;gap:20px}
+.loader .count{font-family:var(--mono);font-stretch:112.5%;font-weight:200;font-size:clamp(64px,13vw,210px);line-height:.78;letter-spacing:-.05em;font-variant-numeric:tabular-nums}
+.loader .bar{position:absolute;left:0;bottom:0;height:2px;background:var(--fg);width:0}
+
+/* cursor */
+.cur,.cring{position:fixed;left:0;top:0;pointer-events:none;z-index:280;border-radius:50%;will-change:transform}
+.cur{width:6px;height:6px;margin:-3px 0 0 -3px;background:#fff;mix-blend-mode:difference}
+.cring{width:46px;height:46px;margin:-23px 0 0 -23px;border:1px solid #fff;mix-blend-mode:difference;display:flex;align-items:center;justify-content:center;transition:width .5s var(--ease),height .5s var(--ease),margin .5s var(--ease),background-color .3s,border-color .3s}
+.cring span{font-family:var(--mono);font-size:9.5px;letter-spacing:.03em;text-transform:uppercase;color:#fff;opacity:0;transition:opacity .25s}
+.cring.big{width:100px;height:100px;margin:-50px 0 0 -50px;background:var(--red);border-color:var(--red);mix-blend-mode:normal}
+.cring.big span{opacity:1}
+.cring.link{width:72px;height:72px;margin:-36px 0 0 -36px}
+@media (hover:none),(pointer:coarse){.cur,.cring{display:none}}
+@media (hover:hover) and (pointer:fine){body.has-cursor,body.has-cursor a,body.has-cursor button{cursor:none}}
+
+/* nav */
+.nav{position:fixed;inset:0 0 auto 0;z-index:90;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px;padding:15px var(--pad);mix-blend-mode:difference;color:#fff;font-family:var(--mono);font-size:10px;letter-spacing:.03em;text-transform:uppercase;transition:transform .7s var(--ease)}
+.nav.hide{transform:translateY(-110%)}
+.nav .brand{white-space:nowrap;justify-self:start}
+.nav ul{display:flex;gap:clamp(16px,2.6vw,42px)}
+.nav .rt{display:flex;justify-content:flex-end;align-items:center;gap:22px;white-space:nowrap}
+.nav a,.nav button{padding:4px 0}
+.nav .bm{display:none}
+.tgl{display:inline-flex;align-items:center;gap:8px;text-transform:uppercase}
+/* language switcher: inline codes (desktop nav, footer) + native select (mobile nav, project bar) */
+.lang{display:flex;align-items:center;gap:2px}
+.lang button{padding:4px 4px!important;opacity:.45;transition:opacity .3s}
+.lang button:hover{opacity:.85}
+.lang button[aria-pressed=true]{opacity:1;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+.lsel{display:none;align-items:center;gap:3px;position:relative}
+.lsel select{-webkit-appearance:none;appearance:none;background:none;border:0;border-radius:0;color:inherit;font:inherit;letter-spacing:inherit;text-transform:uppercase;padding:4px 0;cursor:pointer}
+.lsel select option{color:#111;background:#fff}
+.lsel::after{content:"▾";font-size:9px;pointer-events:none}
+body.has-cursor select{cursor:none}
+.tgl .ico{width:12px;height:12px;border-radius:50%;border:1.5px solid currentColor;background:linear-gradient(90deg,currentColor 50%,transparent 50%);transition:transform .8s var(--ease)}
+[data-theme=light] .tgl .ico{transform:rotate(180deg)}
+
+/* hero */
+.hero{position:relative;height:100svh;min-height:620px;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:0 var(--pad) clamp(6px,1vw,16px)}
+.ribbon{position:absolute;inset:0;z-index:1;pointer-events:none;perspective:1400px;perspective-origin:50% 38%}
+.rs{position:absolute;left:0;top:0;width:var(--w,60px);height:var(--h,174px);margin:calc(var(--h,174px)*-.5) 0 0 calc(var(--w,60px)*-.5);border-radius:999px;background-color:var(--bg2);background-repeat:no-repeat;will-change:transform;transform:scale(0)}
+.cta{position:absolute;z-index:4;right:var(--pad);top:clamp(78px,13vh,130px);width:clamp(290px,23vw,360px);display:grid;gap:6px;opacity:0;transform:translateX(30px);transition:opacity 1s var(--ease) .5s,transform 1.2s var(--ease) .5s}
+.hero.go .cta{opacity:1;transform:none}
+.cta-card,.cta-stat{background:color-mix(in srgb,var(--bg2) 82%,transparent);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}
+.cta-card{display:flex;flex-direction:column;gap:9px;padding:16px;border-radius:18px}
+.cta-txt{padding:15px 14px 14px 15px;display:flex;flex-direction:column;gap:9px}
+.cta-h{font-family:var(--mono);font-stretch:108%;font-weight:500;font-size:14px;line-height:1.15;text-transform:uppercase;letter-spacing:-.01em}
+.cta-p{font-size:12.5px;line-height:1.38;color:var(--mute)}
+.cta-btn{margin-top:5px;border-radius:10px;display:flex;justify-content:space-between;align-items:center;gap:8px;padding:11px 12px 10px;background:var(--bg);font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:.03em;transition:background-color .35s,color .35s}
+.cta-btn:hover{background:var(--fg);color:var(--bg)}
+.cta-ph{position:relative;overflow:hidden}
+.cta-ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.06)}
+.cta-ph figcaption{position:absolute;left:8px;bottom:7px;font-family:var(--mono);font-size:9px;text-transform:uppercase;color:#fff;letter-spacing:.02em}
+.cta-stat{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:11px 12px 11px 15px}
+.cta-stat .av{display:flex;padding-left:7px}
+.cta-stat .av img{width:28px;height:28px;border-radius:50%;object-fit:cover;margin-left:-7px;border:2px solid var(--bg)}
+.kick{position:relative;z-index:3;display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:clamp(2px,.6vw,10px)}
+.kick .label{font-size:clamp(10px,.95vw,14px);color:var(--fg)}
+.kick .kr{text-align:right}
+.slot{display:inline-block;height:1.6em;overflow:hidden;vertical-align:bottom}
+.slot ul{transition:transform .8s var(--ease)}
+.slot li{height:1.6em;color:var(--red);white-space:nowrap}
+html:not(.fl) .wm{opacity:0}
+.wm{position:relative;z-index:2;transition:opacity .4s;font-stretch:120%;font-weight:330;line-height:.8;letter-spacing:-.045em;text-transform:uppercase;white-space:nowrap;margin-left:-.03em;font-size:12vw}
+.wmi{display:inline-block;position:relative}
+.wm .wl{display:inline-block;overflow:hidden;padding:.22em .12em .2em;margin:-.22em -.12em -.2em;vertical-align:bottom}
+.wm .ch{display:inline-block;transform:translateY(106%);transition:transform 1.3s var(--ease)}
+.hero.go .wm .ch{transform:none}
+.wm .gh{position:absolute;left:0;top:0;white-space:nowrap;color:transparent;-webkit-text-stroke:1px var(--fg);opacity:0;pointer-events:none;will-change:transform,opacity}
+.wm .gh .wl{overflow:visible}
+
+/* section head */
+.shead{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:13px 0;margin:0 var(--pad);border-top:1px solid var(--line)}
+
+/* reveals */
+.split .w{display:inline-block;overflow:hidden;vertical-align:top;padding:.22em .12em .26em;margin:-.22em -.12em -.26em}
+.split .w>span{display:inline-block;transform:translateY(110%);transition:transform 1.1s var(--ease)}
+.split.in .w>span{transform:none}
+.rv{opacity:0;transform:translateY(40px);transition:opacity 1.1s var(--ease),transform 1.1s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.clip>*{clip-path:inset(100% 0 0 0);transition:clip-path 1.4s var(--ease)}
+.clip.in>*{clip-path:inset(0 0 0 0)}
+.no-js .rv{opacity:1;transform:none}
+.no-js .clip>*{clip-path:none}
+.no-js .split .w>span{transform:none}
+section{position:relative}
+
+/* disciplines */
+.disc{padding:clamp(70px,9vw,140px) 0 clamp(70px,9vw,140px)}
+.dlist{display:flex;flex-direction:column;gap:clamp(6px,.6vw,10px);padding:0 var(--pad);margin-top:clamp(26px,3.4vw,52px)}
+.dlist li{display:flex;--m:0px;margin-left:var(--m)}
+.dlist li:nth-child(2){--m:9vw}.dlist li:nth-child(3){--m:21vw}.dlist li:nth-child(4){--m:4vw}.dlist li:nth-child(5){--m:15vw}
+@media (max-width:1200px){.dlist li{margin-left:calc(var(--m)*.5)}}
+.drow{display:flex;align-items:center;gap:clamp(14px,2vw,34px);padding:clamp(10px,1.1vw,18px) clamp(14px,1.5vw,26px);background:var(--bg2);max-width:100%;transition:background-color .9s var(--ease)}
+.dlist li:nth-child(even) .drow{flex-direction:row-reverse}
+.drow>.inv{display:flex;align-items:center;gap:inherit;padding:inherit;flex-direction:inherit}
+.drow .dt{font-family:var(--mono);font-stretch:112.5%;font-weight:300;font-size:clamp(26px,4.9vw,84px);line-height:1.02;letter-spacing:-.035em;text-transform:uppercase;white-space:nowrap}
+.drow .dd{font-family:var(--mono);font-size:9.5px;letter-spacing:.02em;line-height:1.6;text-transform:uppercase;color:var(--mute);max-width:23ch}
+.drow .dd b{display:block;margin-top:6px;font-weight:400;color:var(--red)}
+.drow .dn{font-family:var(--mono);font-size:9.5px;color:var(--mute);align-self:flex-start}
+.dnote{padding:0 var(--pad);margin-top:clamp(18px,2vw,28px)}
+
+/* selected work: 3D prism in a palette band */
+.work{height:calc(var(--n,6)*72svh + 100svh);background:var(--bg);color:var(--fg);border-radius:var(--rad) var(--rad) 0 0;transition:background-color .9s var(--ease),color .9s var(--ease)}
+.wstage{position:sticky;top:0;height:100svh;overflow:hidden;display:grid;grid-template-rows:auto 1fr auto;padding:clamp(64px,9vh,92px) var(--pad) clamp(16px,2.4vw,30px)}
+.wtop{grid-row:1;display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);padding-top:12px;position:relative;z-index:3}
+.rwrap{position:absolute;inset:0;perspective:1500px;perspective-origin:50% 42%;pointer-events:none}
+.ring{position:absolute;left:50%;top:44%;width:var(--cw);height:calc(var(--cw)*1.26);margin:calc(var(--cw)*-.63) 0 0 calc(var(--cw)*-.5);transform-style:preserve-3d;will-change:transform;--cw:clamp(210px,23vw,350px)}
+.rcard{position:absolute;inset:0;display:block;border-radius:clamp(10px,1vw,16px);overflow:hidden;background:var(--bg2);-webkit-backface-visibility:hidden;backface-visibility:hidden;pointer-events:auto;filter:brightness(.62) saturate(.85);transition:filter .7s var(--ease)}
+.rcard.on{filter:none}
+.rcard img{width:100%;height:100%;object-fit:cover}
+.rcard .rn{position:absolute;left:10px;top:9px;font-family:var(--mono);font-size:9.5px;color:#fff;mix-blend-mode:difference}
+.wbot{grid-row:3;position:relative;z-index:3;display:grid;grid-template-columns:minmax(0,1fr) minmax(220px,340px);gap:24px;align-items:end}
+.wt{position:relative;display:grid;overflow:hidden;font-size:clamp(42px,7vw,124px);padding:.2em .1em .28em;margin:-.2em -.1em calc(10px - .28em)}
+.wt>span{grid-area:1/1;font-stretch:114%;font-weight:380;line-height:.9;letter-spacing:-.045em;white-space:nowrap}
+.wt>.gh{color:transparent;-webkit-text-stroke:1px var(--fg);pointer-events:none}
+.wt>.gh .red{color:transparent}
+.wmeta{color:var(--fg);opacity:.75}
+.wrole{font-size:14px;line-height:1.45;margin-bottom:16px}
+.wrole span{display:block;color:var(--mute);font-size:13px;margin-top:4px}
+.wopen{display:flex;justify-content:space-between;align-items:center;padding:13px 14px 12px;background:var(--fg);color:var(--bg);font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:.03em;transition:background-color .35s,color .35s}
+.wopen:hover{background:var(--red);color:#fff}
+.ticks{position:absolute;z-index:3;left:50%;bottom:clamp(16px,2.4vw,30px);transform:translateX(-50%);display:flex;gap:6px}
+.ticks button{width:26px;height:16px;position:relative}
+.ticks button::after{content:"";position:absolute;left:0;right:0;top:7px;height:2px;background:var(--line);transition:background-color .4s}
+.ticks button.on::after{background:var(--fg)}
+.wgrid{display:none}
+.work.static{height:auto}
+.work.static .wstage{position:static;height:auto;display:block}
+.work.static .rwrap,.work.static .wbot,.work.static .ticks{display:none}
+.work.static .wgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
+.wgrid a .m{aspect-ratio:4/5;overflow:hidden;border-radius:10px;background:var(--bg2)}
+.wgrid a img{width:100%;height:100%;object-fit:cover}
+.wgrid a h3{font-stretch:110%;font-weight:420;font-size:22px;letter-spacing:-.03em;margin-top:10px}
+
+/* index */
+.index{padding:clamp(90px,11vw,160px) 0 clamp(80px,10vw,150px)}
+.ihead{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;padding:0 var(--pad);margin:clamp(26px,3.4vw,48px) 0 clamp(22px,3vw,40px)}
+.ihead h2{font-size:clamp(64px,13vw,230px)}
+.ihead h2 sup{font-family:var(--mono);font-stretch:100%;font-size:.085em;font-weight:400;letter-spacing:0;vertical-align:top;color:var(--red);margin-left:.2em}
+.ihead .side{max-width:310px;text-align:right;font-size:13.5px;line-height:1.45;color:var(--mute)}
+.ibar{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:10px var(--pad);margin-bottom:clamp(12px,2vw,24px);position:sticky;top:42px;z-index:30;background:var(--bg);transition:top .7s var(--ease),background-color .9s var(--ease)}
+body.nh .ibar{top:0}
+.filters{display:flex;flex-wrap:wrap;gap:5px}
+.chip{display:flex;gap:8px;align-items:center;padding:9px 12px 8px;background:var(--bg2);font-family:var(--mono);font-size:10px;letter-spacing:.02em;text-transform:uppercase;white-space:nowrap;transition:background-color .35s,color .35s}
+.chip sup{font-size:8.5px;color:var(--mute);transition:color .35s}
+.chip:hover{background:color-mix(in srgb,var(--fg) 14%,var(--bg))}
+.chip.on{background:var(--fg);color:var(--bg)}
+.chip.on sup{color:var(--red)}
+.views{display:flex;gap:2px;background:var(--bg2);padding:3px}
+.views button{font-family:var(--mono);font-size:10px;text-transform:uppercase;padding:7px 11px 6px;color:var(--mute);transition:background-color .3s,color .3s}
+.views button.on{background:var(--fg);color:var(--bg)}
+.ilist{margin:0 var(--pad);border-top:1px solid var(--line)}
+.ilist li{border-bottom:1px solid var(--line)}
+.ilist a{display:grid;grid-template-columns:56px minmax(0,1fr) minmax(140px,230px) 230px 72px;gap:18px;align-items:baseline;padding:18px 10px 16px;transition:padding .6s var(--ease)}
+.ilist a>.inv{display:grid;grid-template-columns:inherit;gap:inherit;align-items:inherit;padding:inherit}
+.ilist .n{font-family:var(--mono);font-size:10px;color:var(--mute)}
+.ilist .t{font-stretch:110%;font-weight:400;font-size:clamp(24px,3.1vw,48px);letter-spacing:-.04em;line-height:1}
+.ilist .c{font-size:13px;color:var(--mute)}
+.ilist .d{font-family:var(--mono);font-size:9.5px;letter-spacing:.02em;text-transform:uppercase;color:var(--mute);line-height:1.6}
+.ilist .y{font-family:var(--mono);font-size:11px;text-align:right}
+.ilist a:hover{padding-left:26px}
+.ilist li.hide,.igrid .icard.hide{display:none}
+.igrid{display:none;grid-template-columns:repeat(4,1fr);gap:clamp(18px,2vw,30px) clamp(10px,1.2vw,18px);padding:0 var(--pad)}
+.index.grid-view .igrid{display:grid}
+.index.grid-view .ilist{display:none}
+.icard .m{aspect-ratio:4/5;overflow:hidden;background:var(--bg2);border-radius:6px}
+.icard img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.icard:hover img{transform:scale(1.05)}
+.icard .mt{display:flex;justify-content:space-between;gap:10px;margin-top:10px;align-items:baseline}
+.icard h4{font-stretch:108%;font-weight:430;font-size:19px;letter-spacing:-.03em;line-height:1.05}
+
+/* floating preview (index rows + disciplines) */
+.float{position:fixed;left:0;top:0;z-index:80;pointer-events:none;will-change:transform}
+.float .fi{position:relative;width:var(--fw);height:calc(var(--fw)*1.25);margin:calc(var(--fw)*-.625) 0 0 calc(var(--fw)*-.5);border-radius:10px;overflow:hidden;background:var(--bg2);box-shadow:0 30px 70px rgba(0,0,0,.28);opacity:0;transform:scale(.6);transition:opacity .3s,transform .6s var(--ease),margin .6s var(--ease)}
+.float.on .fi{opacity:1;transform:none}
+.float.side .fi{margin:calc(var(--fw)*-.9) 0 0 34px}
+.float .fi img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+/* marquee */
+.marquee{overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:clamp(12px,1.6vw,22px) 0;white-space:nowrap}
+.marquee .mq{display:inline-flex;will-change:transform}
+.marquee span{font-family:var(--mono);font-stretch:112.5%;font-weight:200;font-size:clamp(28px,4.4vw,74px);letter-spacing:-.04em;line-height:1;padding-right:.5em;display:inline-flex;align-items:center;gap:.5em;text-transform:uppercase}
+.marquee span i{width:.3em;height:.3em;background:var(--red);display:inline-block}
+
+/* about */
+.about{padding:clamp(100px,12vw,180px) 0}
+.about-grid{display:grid;grid-template-columns:5fr 7fr;gap:clamp(30px,6vw,110px);padding:0 var(--pad);margin-top:clamp(30px,4vw,56px);align-items:start}
+.portrait{align-self:stretch}
+.portrait .ph{overflow:hidden;border-radius:6px}
+.portrait img{width:100%;height:auto}
+.portrait figcaption{display:flex;justify-content:space-between;margin-top:10px;position:sticky;top:62px}
+.about .lead{font-stretch:106%;font-size:clamp(24px,2.8vw,44px);line-height:1.08;letter-spacing:-.035em;font-weight:400;margin-bottom:44px}
+.about .lead .serif{color:var(--red)}
+.about .cols{columns:2;column-gap:40px;font-size:15px;line-height:1.62;color:var(--mute)}
+.about .cols p{margin-bottom:1em;break-inside:avoid}
+.about .cols strong{color:var(--fg);font-weight:600}
+.cv{margin-top:56px}
+.cv>div{display:grid;grid-template-columns:140px 1fr;gap:20px;padding:15px 0;border-top:1px solid var(--line);font-size:15px}
+.cv>div:last-child{border-bottom:1px solid var(--line)}
+.cv dd span{display:block}
+.cv dd em{font-style:normal;color:var(--mute)}
+.collab{display:flex;flex-wrap:wrap;gap:5px;margin-top:14px}
+.collab li{padding:9px 12px 8px;background:var(--bg2);font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:.02em}
+
+/* contact */
+.contact{padding:clamp(100px,12vw,180px) 0 var(--pad);overflow:hidden}
+.contact .in{padding:0 var(--pad)}
+.contact .big{font-size:clamp(56px,11.5vw,210px);margin:clamp(30px,4vw,56px) 0 clamp(40px,6vw,80px)}
+.contact .big .serif{color:var(--red)}
+.mail{display:inline-flex;align-items:center;gap:clamp(12px,2vw,30px);font-stretch:108%;font-size:clamp(22px,4.2vw,70px);font-weight:400;letter-spacing:-.045em;border-bottom:1px solid var(--fg);padding-bottom:6px;transition:color .4s,border-color .4s;text-align:left}
+.mail:hover{color:var(--red);border-color:var(--red)}
+.mail .arr{display:inline-block;transition:transform .6s var(--ease)}
+.mail:hover .arr{transform:rotate(-45deg)}
+.mail-note{margin-top:14px;min-height:16px}
+.clinks{display:grid;grid-template-columns:repeat(2,1fr);max-width:760px;gap:5px;margin-top:clamp(50px,7vw,100px)}
+.clinks>*{padding:16px 14px 18px;display:flex;flex-direction:column;gap:10px;background:var(--bg2);text-align:left;min-height:96px}
+.clinks .v{font-size:16px;font-weight:450;letter-spacing:-.01em}
+.clinks a:hover .v,.clinks button:hover .v{color:var(--red)}
+.foot{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;margin-top:clamp(60px,8vw,120px)}
+.giant{font-stretch:125%;font-weight:200;font-size:19.4vw;letter-spacing:-.06em;line-height:.76;margin:30px 0 0 calc(var(--pad) - .04em);white-space:nowrap;color:transparent;-webkit-text-stroke:1px var(--line);user-select:none;text-transform:uppercase}
+.giant .red{-webkit-text-stroke:0;color:var(--red)}
+
+/* project page */
+.pj{position:fixed;inset:0;z-index:150;background:var(--bg);color:var(--fg);overflow-y:auto;overscroll-behavior:contain;clip-path:inset(100% 0 0 0);visibility:hidden;transition:clip-path 1s var(--io),visibility 0s 1s,background-color .6s,color .6s}
+.pj.open{clip-path:inset(0 0 0 0);visibility:visible;transition:clip-path 1s var(--io),visibility 0s,background-color .6s,color .6s}
+.pj-bar{position:sticky;top:0;z-index:5;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:12px var(--pad);mix-blend-mode:difference;color:#fff;font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:.03em}
+.pj-bar .r{display:flex;gap:18px;justify-content:flex-end;align-items:center}
+.pj-bar .x{display:inline-flex;gap:10px;align-items:center}
+.pj-bar .x i{width:38px;height:38px;border:1px solid rgba(255,255,255,.55);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-style:normal;font-size:17px;transition:transform .6s var(--ease),background .3s,color .3s}
+.pj-bar .lsel{display:inline-flex}
+.pj-bar .x:hover i{transform:rotate(-90deg);background:#fff;color:#000}
+.pj-bar .arrows button{font-size:18px;padding:4px 6px;transition:transform .4s var(--ease)}
+.pj-bar .arrows button:hover{transform:translateX(3px)}
+.pj-bar .arrows button:first-child:hover{transform:translateX(-3px)}
+#pjbody{transition:opacity .45s var(--ease),transform .6s var(--ease)}
+#pjbody.swap{opacity:0;transform:translateY(30px)}
+.pj-hero{padding:5vh var(--pad) 0}
+.pj-hero .label{display:flex;gap:18px;flex-wrap:wrap}
+.pj-hero h2{font-stretch:114%;font-weight:400;font-size:clamp(54px,11vw,200px);letter-spacing:-.05em;line-height:.86;margin:20px 0 16px}
+.pj-hero h2 .red{color:var(--red)}
+.pj-sub{font-family:var(--mono);font-size:11px;letter-spacing:.02em;text-transform:uppercase;color:var(--mute);margin-bottom:clamp(26px,4vw,48px)}
+.pj-info{display:grid;grid-template-columns:1.2fr 1fr 1.3fr .5fr 1.2fr;gap:20px;border-top:1px solid var(--line);padding-top:16px;margin-bottom:clamp(30px,4vw,56px)}
+.pj-info dt{margin-bottom:8px}
+.pj-info dd{font-size:14px;line-height:1.5}
+.pj-info .tag{display:inline-block;background:var(--bg2);padding:5px 8px 4px;margin:0 4px 6px 0;font-family:var(--mono);font-size:9.5px;text-transform:uppercase;letter-spacing:.02em}
+.sw{display:flex;flex-direction:column;gap:6px}
+.sw span{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:10px;letter-spacing:.02em;text-transform:uppercase}
+.sw i{width:18px;height:18px;border-radius:50%;border:1px solid var(--line);flex:none}
+.pj-cover{display:flex;justify-content:center;overflow:hidden;padding:0 var(--pad)}
+.pj-cover img{max-height:92vh;width:auto;max-width:100%;transform:scale(1.08);transition:transform 2s var(--ease)}
+.pj.open .pj-cover img{transform:scale(1)}
+.pj-text{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,110px);padding:clamp(60px,9vw,140px) var(--pad)}
+.pj-text .lead{font-stretch:104%;font-size:clamp(22px,2.4vw,38px);line-height:1.12;letter-spacing:-.03em;font-weight:400}
+.pj-text .body{font-size:15.5px;line-height:1.65;color:var(--mute)}
+.pj-text .body p+p{margin-top:1em}
+.pj-text .body em{font-style:normal;color:var(--fg)}
+.pj-quote{font-stretch:118%;font-weight:250;font-size:clamp(30px,5vw,88px);line-height:.95;text-align:center;letter-spacing:-.045em;text-transform:uppercase;padding:clamp(70px,10vw,160px) var(--pad);max-width:18ch;margin:0 auto}
+.pj-quote::before{content:"“";color:var(--red)}.pj-quote::after{content:"”";color:var(--red)}
+.rows{padding:0 var(--pad);display:flex;flex-direction:column;gap:clamp(8px,1vw,16px)}
+.row{display:flex;gap:clamp(8px,1vw,16px)}
+.row figure{overflow:hidden;background:var(--bg2);min-width:0}
+.row img{width:100%;height:100%;object-fit:cover;transform:scale(1.1);transition:transform 1.6s var(--ease)}
+.row figure.in img{transform:scale(1)}
+.row figure:hover img{transform:scale(1.03)}
+.sub-h{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:clamp(70px,9vw,130px) 0 18px;border-bottom:1px solid var(--line);margin:0 var(--pad) clamp(16px,2vw,24px)}
+.sub-h h3{font-stretch:110%;font-size:clamp(32px,3.8vw,58px);font-weight:400;letter-spacing:-.045em;line-height:1}
+.sub-h h3 .label{font-size:11px;vertical-align:super;margin-right:.5em;color:var(--red)}
+.credits{margin:clamp(70px,9vw,130px) var(--pad) 0;border-top:1px solid var(--line)}
+.chap .credits{margin-top:clamp(28px,4vw,48px)}
+.chap-text{padding:0 var(--pad);margin:0 0 clamp(18px,2.4vw,30px);max-width:calc(62ch + var(--pad)*2);font-size:15.5px;line-height:1.65;color:var(--mute)}
+.chap-text p+p{margin-top:.8em}
+.rlabel{padding-top:clamp(20px,3vw,40px)}
+.row figure.vid video{width:100%;height:100%;object-fit:cover;display:block}
+.row figure.ctl{background:#000}
+.row figure.ctl video{object-fit:contain}
+.row.solo{justify-content:center}
+.row.solo figure{flex:none!important;width:min(100%,calc(90vh*var(--a)))}
+.pj-cover.logo .lg{width:100%;height:min(80vh,56vw);background:var(--bg2);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.pj-cover.logo img{height:74%;width:auto;max-height:none}
+#pjbody.bare .pj-hero .pj-info{margin-bottom:clamp(20px,2.4vw,34px)}
+/* carousel */
+.rows .car-w{margin:0 calc(var(--pad)*-1)}
+.car{--ch:min(78vh,880px);display:flex;align-items:flex-start;gap:clamp(8px,1vw,16px);overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scroll-padding:0 var(--pad);padding:0 var(--pad);scrollbar-width:none;outline:0}
+.car::-webkit-scrollbar{display:none}
+.car figure{flex:none;width:min(calc(var(--ch)*var(--a)),82vw);aspect-ratio:var(--a);scroll-snap-align:start;overflow:hidden;background:var(--bg2)}
+.car img{width:100%;height:100%;object-fit:cover;-webkit-user-drag:none;user-select:none;transform:scale(1.06);transition:transform 1.4s var(--ease)}
+.car figure.in img{transform:scale(1)}
+.car.drag img{pointer-events:none}
+.car:focus-visible{outline:1px solid var(--fg);outline-offset:4px}
+.car-ui{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:18px;padding:16px var(--pad) 0}
+.car-n b{color:var(--fg);font-weight:400}
+.car-bar{height:1px;background:var(--line);position:relative;overflow:hidden}
+.car-bar i{position:absolute;left:0;top:0;bottom:0;width:30%;background:var(--fg);will-change:transform}
+.car-ar{display:flex;gap:6px}
+.car-ar button{width:40px;height:40px;border:1px solid var(--line);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:15px;color:var(--fg);transition:background-color .3s,color .3s,border-color .3s,opacity .3s}
+.car-ar button:hover{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.car-ar button:disabled{opacity:.3;pointer-events:none}
+@media (hover:hover) and (pointer:fine){.car{scroll-snap-type:none}}
+.credits div{display:grid;grid-template-columns:240px 1fr;gap:20px;padding:14px 0;border-bottom:1px solid var(--line);font-size:15px}
+.pj-next{display:block;margin-top:clamp(90px,12vw,170px);border-top:1px solid var(--line);padding:clamp(40px,6vw,80px) var(--pad);position:relative;overflow:hidden}
+.pj-next .label{display:block;margin-bottom:14px}
+.pj-next h4{font-stretch:116%;font-size:clamp(50px,10vw,180px);font-weight:380;letter-spacing:-.05em;line-height:.86;transition:transform .8s var(--ease)}
+.pj-next:hover h4{transform:translateX(30px)}
+.pj-next img{position:absolute;right:var(--pad);top:50%;width:clamp(140px,16vw,240px);border-radius:10px;transform:translateY(-50%) scale(.85);opacity:0;transition:.7s var(--ease)}
+.pj-next:hover img{opacity:1;transform:translateY(-50%) scale(1)}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:260;background:rgba(8,8,8,.96);display:flex;align-items:center;justify-content:center;padding:64px 80px;opacity:0;visibility:hidden;transition:opacity .4s,visibility 0s .4s}
+.lb.on{opacity:1;visibility:visible;transition:opacity .4s}
+.lb img{max-width:100%;max-height:100%;object-fit:contain}
+.lb button{position:absolute;color:#fff;font-size:10px;padding:14px;font-family:var(--mono);letter-spacing:.03em;text-transform:uppercase}
+.lb button:hover{color:#ef4d2c}
+.lb .x{top:10px;right:14px}.lb .pr{left:10px;top:50%;transform:translateY(-50%)}.lb .nx{right:10px;top:50%;transform:translateY(-50%)}
+.lb .ct{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);color:#999}
+
+@media (max-width:1180px){.nav .clock{display:none}}
+@media (max-width:1180px){.ilist a{grid-template-columns:44px minmax(0,1fr) 190px 60px}.ilist .c{display:none}}
+@media (max-width:1000px){.cta{display:none}}
+@media (max-width:900px){
+  .nav{grid-template-columns:auto 1fr auto}.nav ul{justify-content:flex-end}.nav .bt,.nav .clock,.nav .hide-m{display:none}.nav .bm{display:inline}
+  .kick{flex-direction:column;align-items:flex-start;gap:6px}.kick .kr{text-align:left}
+  .wm .wl{display:block}
+  .dlist li{margin-left:0!important}
+  .drow,.dlist li:nth-child(even) .drow{width:100%;flex-direction:column;align-items:flex-start;gap:8px}
+  .drow .dt{font-size:6.3vw}
+  .drow .dd{max-width:none}
+  .drow .dn{position:absolute;right:14px;top:12px}
+  .wbot{grid-template-columns:1fr;gap:14px}
+  .wt{font-size:clamp(34px,10.5vw,64px)}
+  .ring{--cw:clamp(170px,52vw,260px);top:40%}
+  .wrole{display:none}
+  .ticks{bottom:auto;top:clamp(92px,13vh,120px)}
+  .work.static .wgrid{grid-template-columns:1fr 1fr}
+  .ihead{flex-direction:column;align-items:flex-start}.ihead .side{text-align:left}
+  .ibar{flex-direction:column;align-items:stretch;top:40px}
+  .filters{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin:0 calc(var(--pad)*-1);padding:0 var(--pad)}
+  .filters::-webkit-scrollbar{display:none}
+  .views{align-self:flex-start}
+  .ilist a{grid-template-columns:30px minmax(0,1fr) 62px;row-gap:6px;padding:16px 4px 14px}
+  .ilist .d{grid-column:2/3;grid-row:2}
+  .ilist a:hover{padding-left:4px}
+  .igrid{grid-template-columns:1fr 1fr}
+  .about-grid,.pj-text{grid-template-columns:1fr}
+  .portrait{position:static;max-width:440px}
+  .about .cols{columns:1}
+  .cv>div,.credits div{grid-template-columns:1fr;gap:4px}
+  .clinks{grid-template-columns:1fr 1fr}
+  .pj-info{grid-template-columns:1fr 1fr}
+  .pj-bar .cnt{display:none}.pj-bar{grid-template-columns:1fr auto}
+  .row{flex-wrap:wrap}
+  .row.m-stack figure{flex-basis:100%!important}
+  .row.many{flex-wrap:nowrap;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain;margin:0 calc(var(--pad)*-1);padding:0 var(--pad);scroll-padding:0 var(--pad)}
+  .row.many::-webkit-scrollbar{display:none}
+  .row.many figure{flex:none!important;width:min(calc(56vh*var(--a)),78vw);scroll-snap-align:start}
+  .car{--ch:62vh}
+  .car-ar button{width:36px;height:36px}
+  .nav .lang{display:none}.nav .lsel{display:inline-flex}.nav .rt{gap:16px}
+  .lb{padding:56px 12px}
+  .float{display:none}
+}
+@media (max-width:560px){.clinks{grid-template-columns:1fr}.clinks>*{min-height:0}.pj-info{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition-duration:.01s!important}.grain{display:none}}
+</style>
+</head>
+<body class="no-js">
+<div class="grain" aria-hidden="true"></div>
+
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="top label"><span>Marco S. Zanini</span><span data-tr="ldPf">Portfolio — 2026</span></div>
+  <div class="pills" id="pills"></div>
+  <div class="bot"><span class="count" id="cnt">000</span><span class="label" style="text-align:right" data-tr="ldDisc">Graphic design<br>Creative direction<br>Art direction<br>Photography<br>Film</span></div>
+  <div class="bar" id="bar"></div>
+</div>
+
+<div class="cur" id="cur"></div>
+<div class="cring" id="cring"><span id="cringtxt">View</span></div>
+
+<nav class="nav" id="nav" aria-label="Main">
+  <a href="#top" class="brand" data-c="link"><span class="bt" data-scr>Marco S. Zanini</span><span class="bm">M.S.Z.</span></a>
+  <ul>
+    <li><a href="#work" data-c="link" data-scr data-tr="nWork">Work</a></li>
+    <li class="hide-m"><a href="#disciplines" data-c="link" data-scr data-tr="nDisc">Disciplines</a></li>
+    <li><a href="#index" data-c="link" data-scr data-tr="nIdx">Index</a></li>
+    <li><a href="#about" data-c="link" data-scr data-tr="nAbout">About</a></li>
+    <li class="hide-m"><a href="#contact" data-c="link" data-scr data-tr="nContact">Contact</a></li>
+  </ul>
+  <div class="rt"><span class="clock" id="clock">Milano</span><button class="tgl" data-theme-toggle data-c="link" aria-label="Switch colour mode"><span class="ico"></span><span class="bt" data-tl>Dark</span></button></div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="ribbon" id="ribbon" aria-hidden="true"></div>
+  <aside class="cta" aria-label="Start a project" data-tra="aria-label:aStart">
+    <div class="cta-card">
+      <p class="cta-h" data-tr="ctaH">Start<br>a project</p>
+      <p class="cta-p" data-tr="ctaP">Identity, campaign, set or film — let’s talk about it.</p>
+      <a class="cta-btn" href="#contact" data-c="link"><span data-scr data-tr="ctaB">Write me</span><span>→</span></a>
+    </div>
+  </aside>
+  <div class="kick">
+    <span class="label kl"><span data-tr="kick">Multidisciplinary creative</span> — <span class="slot"><ul id="slot" data-tr="slot"><li>Graphic design</li><li>Creative direction</li><li>Art direction</li><li>Photography</li><li>Post-production</li><li>Film</li><li>Graphic design</li></ul></span></span>
+    <span class="label kr" data-tr="kr">Based in Milano, IT<br>Scroll ↓</span>
+  </div>
+  <h1 class="wm" id="wm" aria-label="Marco S. Zanini"><span class="wmi" id="wmi"><span class="wl" data-chars>Marco S.</span> <span class="wl" data-chars>Zanini</span></span></h1>
+</header>
+
+<section class="disc" id="disciplines">
+  <div class="shead"><span class="label"><b>(01)</b> — <span data-tr="s1">What I do</span></span><span class="label" data-tr="s1r">Four disciplines, one way of looking</span></div>
+  <ul class="dlist" id="dlist"></ul>
+  <p class="dnote label rv" data-tr="dnote">Hover for a preview — click a discipline to filter the index</p>
+</section>
+
+<section class="work" id="work" style="--n:6">
+  <div class="wstage">
+    <div class="wtop"><span class="label"><b>(02)</b> — <span data-tr="s2">Selected work</span></span><span class="label"><span id="wcnt">01</span> / <span id="wtot">06</span></span></div>
+    <div class="rwrap" aria-hidden="true"><div class="ring" id="ring3d"></div></div>
+    <div class="wbot">
+      <div><div class="wt" id="wtitle"></div><p class="label wmeta" id="wmeta"></p></div>
+      <div><p class="wrole" id="wrole"></p><a class="wopen" id="wopen" href="#igs" data-c="link"><span data-scr data-tr="openP">Open project</span><span>↗</span></a></div>
+    </div>
+    <div class="ticks" id="ticks" role="group" aria-label="Selected projects" data-tra="aria-label:aSel"></div>
+    <div class="wgrid" id="wgrid"></div>
+  </div>
+</section>
+
+<section class="index" id="index">
+  <div class="shead"><span class="label"><b>(03)</b> — <span data-tr="s3">Index</span></span><span class="label" data-tr="s3r">Filter by discipline · list or grid</span></div>
+  <div class="ihead"><h2 class="disp split"><span data-tr="s3h">Index</span><sup id="icount">15</sup></h2><p class="side rv" data-tr="s3p">Everything in one place. Every project carries its own colour palette — hover a row to step into it.</p></div>
+  <div class="ibar">
+    <div class="filters" id="filters" role="toolbar" aria-label="Filter by discipline" data-tra="aria-label:aFilter"></div>
+    <div class="views" role="group" aria-label="View" data-tra="aria-label:aView"><button data-view="list" class="on" data-c="link" data-tr="vList">List</button><button data-view="grid" data-c="link" data-tr="vGrid">Grid</button></div>
+  </div>
+  <ul class="ilist" id="ilist"></ul>
+  <div class="igrid" id="igrid"></div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="mq" id="mq1"></div></div>
+
+<section class="about" id="about">
+  <div class="shead"><span class="label"><b>(04)</b> — <span data-tr="s4">About</span></span><span class="label">Milano, IT</span></div>
+  <div class="about-grid">
+    <figure class="portrait">
+      <div class="ph clip"><img src="img/about/02.webp" width="1066" height="853" alt="Portrait of Marco S. Zanini" data-tra="alt:altPortrait" id="pimg"></div>
+      <figcaption class="label"><span>Marco S. Zanini</span><span>Milano</span></figcaption>
+    </figure>
+    <div>
+      <p class="lead split" data-tr="abLead">A versatile creative with a multidisciplinary background — from <span class="serif">industrial design</span> to <span class="serif">visual arts.</span></p>
+      <div class="cols rv" data-tr="abCols"><p>I hold a degree in Product Design from NABA (Nuova Accademia di Belle Arti) in Milan. During my studies I gradually moved from industrial design towards visual arts, developing a strong interest in communication, creative direction and graphic design.</p><p>As a singer-songwriter under the name <strong>ZANI</strong>, I explore these interests through music, overseeing the creative direction and visual communication of the project.</p><p>I was part of the editorial team of NABA’s magazine for Milan Design Week 2023, and that same year worked as a teaching assistant alongside professor and design critic Massimo Martignoni, on his course on Modern Architecture History.</p><p>After graduating I spent a year as a graphic designer for FNM and Buccellati, before going freelance. Since then I’ve worked on graphic identities and visual communication for festivals, music and theatre events, and fashion editorials — and I’m in my second year as assistant director alongside Andrea Vailati, founder of ArteSettima.</p></div>
+      <dl class="cv rv" data-tr="cv"><div><dt class="label">Education</dt><dd>Product Design <em>— NABA, Milano</em></dd></div><div><dt class="label">Experience</dt><dd><span>Freelance creative <em>— identities, campaigns, editorials</em></span><span>Assistant Director <em>— ArteSettima / Andrea Vailati</em></span><span>Graphic Designer <em>— FNM, Buccellati</em></span><span>Teaching Assistant <em>— Prof. Massimo Martignoni, NABA</em></span></dd></div><div><dt class="label">Editorial</dt><dd>NABA magazine <em>— Milan Design Week 2023</em></dd></div><div><dt class="label">Music</dt><dd>ZANI <em>— singer-songwriter &amp; creative direction</em></dd></div></dl>
+      <p class="label rv" style="margin-top:56px" data-tr="collab">Selected collaborations</p>
+      <ul class="collab rv"><li>Italian Global Series Festival</li><li>Teatro Palapartenope</li><li>University Box</li><li>ArteSettima</li><li>FNM</li><li>Buccellati</li><li>NABA</li></ul>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="mq" id="mq2"></div></div>
+
+<section class="contact" id="contact">
+  <div class="shead"><span class="label"><b>(05)</b> — <span data-tr="s5">Contact</span></span><span class="label" id="clock2">Milano</span></div>
+  <div class="in">
+    <h2 class="big disp split" data-tr="cH">Let’s make<br>something <span class="serif">real.</span></h2>
+    <button class="mail" id="mail" data-c="link" data-copy="zaninimarco01@gmail.com"><span>zaninimarco01@gmail.com</span><span class="arr">→</span></button>
+    <p class="label mail-note" id="mailnote" data-tr="copyHint">Click to copy</p>
+    <div class="clinks">
+      <a href="https://www.instagram.com/emmezzeta___/" target="_blank" rel="noopener" data-c="link"><span class="label">Instagram ↗</span><span class="v">@emmezzeta___</span></a>
+      <a href="https://www.linkedin.com/in/marco-s-zanini-392442187/" target="_blank" rel="noopener" data-c="link"><span class="label">LinkedIn ↗</span><span class="v">Marco S. Zanini</span></a>
+    </div>
+    <div class="foot label"><span>© 2026 Marco S. Zanini</span><button data-theme-toggle data-c="link" class="tgl"><span class="ico"></span><span data-tlf>Dark mode</span></button><a href="#top" data-c="link" data-tr="top">Back to top ↑</a></div>
+  </div>
+</section>
+
+<div class="float" id="float" aria-hidden="true"><div class="fi" id="fi"></div></div>
+
+<article class="pj" id="pj" aria-hidden="true">
+  <div class="pj-bar">
+    <button class="x" id="pjclose" data-c="link"><i>×</i><span data-tr="close">Close</span></button>
+    <span class="cnt" id="pjcnt">01 / 15</span>
+    <div class="r"><button class="tgl" data-theme-toggle data-c="link" aria-label="Switch colour mode"><span class="ico"></span></button><span class="arrows"><button id="pjprev" aria-label="Previous project" data-tra="aria-label:aPrevP" data-c="link">←</button><button id="pjnext" aria-label="Next project" data-tra="aria-label:aNextP" data-c="link">→</button></span></div>
+  </div>
+  <div id="pjbody"></div>
+</article>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Image viewer" data-tra="aria-label:aViewer"><button class="x" data-tr="lbClose">Close ×</button><button class="pr" data-tr="lbPrev">← Prev</button><img alt=""><button class="nx" data-tr="lbNext">Next →</button><span class="ct label"></span></div>
+
+<script>
+document.body.classList.remove('no-js');
+const IMG={"about/00":{"a":1.3404,"s":567,"l":567},"about/02":{"a":1.2497,"s":1000,"l":1066},"antonieyau/00":{"a":0.75,"s":750,"l":1800},"antonieyau/01":{"a":0.75,"s":750,"l":1800},"antonieyau/02":{"a":0.75,"s":750,"l":1800},"antonieyau/03":{"a":0.75,"s":750,"l":1800},"antonieyau/04":{"a":0.75,"s":750,"l":1800},"antonieyau/05":{"a":0.75,"s":750,"l":1800},"antonieyau/06":{"a":0.75,"s":750,"l":1800},"antonieyau/07":{"a":0.75,"s":750,"l":1800},"fnm/00":{"a":1.7783,"s":1000,"l":2134},"fnm/01":{"a":1.7783,"s":1000,"l":2134},"fnm/02":{"a":1.7778,"s":1000,"l":2400},"fnm/m10":{"a":1.7778,"s":1000,"l":2400},"fnm/m11":{"a":1.7778,"s":1000,"l":2400},"fnm/m12":{"a":1.7778,"s":1000,"l":2400},"fnm/m15":{"a":1.7778,"s":1000,"l":2400},"fnm/m16":{"a":1.7778,"s":1000,"l":2400},"fnm/m17":{"a":1.7778,"s":1000,"l":2400},"fnm/m18":{"a":1.7778,"s":1000,"l":2400},"fnm/m20":{"a":1.7778,"s":1000,"l":2400},"fnm/m27":{"a":1.7778,"s":1000,"l":2400},"fnm/m28":{"a":1.7778,"s":1000,"l":2400},"fnm/m30":{"a":1.7778,"s":1000,"l":2400},"fnm/m31":{"a":1.7778,"s":1000,"l":2400},"fnm/m32":{"a":1.7778,"s":1000,"l":2400},"fnm/m33":{"a":1.7778,"s":1000,"l":2400},"fnm/m41":{"a":1.7778,"s":1000,"l":2400},"fnm/m42":{"a":1.7778,"s":1000,"l":2400},"fnm/m43":{"a":1.7778,"s":1000,"l":2400},"fnm/m44":{"a":1.7778,"s":1000,"l":2400},"fnm/m45":{"a":1.7778,"s":1000,"l":2400},"fnm/m46":{"a":1.7778,"s":1000,"l":2400},"fnm/m49":{"a":1.7778,"s":1000,"l":2400},"fnm/m50":{"a":1.7778,"s":1000,"l":2400},"fnm/m52":{"a":1.7778,"s":1000,"l":2400},"fnm/m53":{"a":1.7778,"s":1000,"l":2400},"fnm/m55":{"a":1.7778,"s":1000,"l":2400},"fnm/m57":{"a":1.7778,"s":1000,"l":2400},"fnm/m63":{"a":1.7778,"s":1000,"l":2400},"fnm/m64":{"a":1.7778,"s":1000,"l":2400},"igs/00":{"a":0.6175,"s":618,"l":1482},"igs/01":{"a":0.8,"s":800,"l":1920},"igs/02":{"a":0.8,"s":800,"l":1920},"igs/03":{"a":0.8,"s":800,"l":1920},"igs/04":{"a":0.8,"s":800,"l":1920},"igs/05":{"a":0.8,"s":800,"l":1920},"igs/06":{"a":0.8,"s":800,"l":1920},"igs/07":{"a":0.8,"s":800,"l":1920},"igs/08":{"a":0.8,"s":800,"l":1920},"igs/09":{"a":0.8,"s":800,"l":1920},"igs/10":{"a":0.5625,"s":562,"l":1350},"igs/11":{"a":0.5625,"s":562,"l":1350},"igs/12":{"a":0.8,"s":800,"l":1920},"igs/13":{"a":0.8,"s":800,"l":1920},"igs/14":{"a":0.8,"s":800,"l":1920},"igs/15":{"a":0.8,"s":800,"l":1920},"igs/16":{"a":0.8,"s":800,"l":1920},"igs/logo":{"a":1.5,"s":1000,"l":2400},"livemusic/00":{"a":0.5641,"s":564,"l":1136},"livemusic/01":{"a":0.563,"s":563,"l":1170},"livemusic/02":{"a":0.5821,"s":582,"l":1170},"livemusic/03":{"a":0.571,"s":571,"l":1170},"livemusic/04":{"a":0.6529,"s":653,"l":1170},"madri/00":{"a":1.7783,"s":1000,"l":2134},"madri/01":{"a":1.7783,"s":1000,"l":2134},"madri/02":{"a":1.7783,"s":1000,"l":2134},"madri/03":{"a":1.7783,"s":1000,"l":2134},"madri/04":{"a":1.7783,"s":1000,"l":2134},"madri/05":{"a":1.7783,"s":1000,"l":2134},"madri/06":{"a":1.7783,"s":1000,"l":2134},"madri/07":{"a":1.7783,"s":1000,"l":2134},"madri/08":{"a":1.7783,"s":1000,"l":2134},"madri/09":{"a":1.7783,"s":1000,"l":2134},"madri/10":{"a":1.7783,"s":1000,"l":2134},"madri/11":{"a":1.7783,"s":1000,"l":2134},"mimappo/00":{"a":1.3326,"s":1000,"l":2400},"mimappo/01":{"a":0.8,"s":800,"l":1024},"mimappo/02":{"a":0.8,"s":800,"l":1024},"mimappo/03":{"a":0.8,"s":800,"l":1024},"mimappo/04":{"a":0.8,"s":800,"l":1024},"mimappo/05":{"a":0.8,"s":800,"l":1024},"mimappo/06":{"a":0.8,"s":800,"l":1024},"nomore/00":{"a":0.75,"s":750,"l":1800},"nomore/01":{"a":0.6667,"s":667,"l":1536},"nomore/02":{"a":1.5007,"s":1000,"l":2305},"nomore/03":{"a":0.6367,"s":637,"l":1528},"nomore/04":{"a":0.6667,"s":667,"l":1536},"nomore/05":{"a":0.6667,"s":667,"l":1536},"nomore/06":{"a":0.6667,"s":667,"l":1536},"nomore/07":{"a":0.6667,"s":667,"l":1326},"nomore/08":{"a":0.6885,"s":688,"l":1536},"nomore/09":{"a":0.7525,"s":753,"l":1788},"nomore/10":{"a":1.3333,"s":1000,"l":2400},"nomore/f0":{"a":1.7778,"s":1000,"l":1280},"nomore/f1":{"a":0.5625,"s":562,"l":720},"numero10/00":{"a":0.8,"s":800,"l":1920},"numero10/01":{"a":0.8,"s":800,"l":1920},"numero10/02":{"a":0.7071,"s":707,"l":1697},"numero10/04":{"a":0.5625,"s":562,"l":1350},"numero10/05":{"a":0.8,"s":800,"l":1920},"numero10/06":{"a":0.8,"s":800,"l":1920},"numero10/07":{"a":0.5625,"s":562,"l":1350},"posters/00":{"a":0.8,"s":800,"l":1920},"posters/01":{"a":1.0,"s":1000,"l":2400},"posters/02":{"a":0.75,"s":750,"l":1800},"posters/03":{"a":0.8,"s":800,"l":1080},"posters/04":{"a":1.0,"s":1000,"l":1000},"posters/05":{"a":0.6629,"s":663,"l":1591},"posters/06":{"a":0.663,"s":663,"l":716},"posters/07":{"a":0.6639,"s":478,"l":478},"posters/08":{"a":1.3333,"s":1000,"l":2400},"posters/09":{"a":1.0,"s":1000,"l":2400},"posters/10":{"a":1.0,"s":1000,"l":2400},"posters/11":{"a":1.0,"s":1000,"l":2400},"santaliberta/00":{"a":1.7778,"s":1000,"l":2400},"santaliberta/01":{"a":0.7208,"s":721,"l":1074},"santaliberta/02":{"a":0.7281,"s":728,"l":1082},"santaliberta/03":{"a":0.7341,"s":734,"l":1088},"struttura/00":{"a":0.8,"s":800,"l":1920},"struttura/01":{"a":0.6667,"s":667,"l":1600},"struttura/02":{"a":0.6667,"s":667,"l":1600},"struttura/03":{"a":0.8,"s":800,"l":1920},"struttura/04":{"a":0.6667,"s":667,"l":1600},"struttura/05":{"a":0.8,"s":800,"l":1920},"struttura/06":{"a":0.75,"s":750,"l":1800},"struttura/07":{"a":0.75,"s":750,"l":1800},"struttura/08":{"a":0.6667,"s":667,"l":1600},"struttura/09":{"a":0.75,"s":750,"l":1800},"struttura/10":{"a":0.75,"s":750,"l":1800},"struttura/11":{"a":0.75,"s":750,"l":1800},"tiresia/00":{"a":0.6667,"s":667,"l":1600},"tiresia/01":{"a":0.6667,"s":667,"l":1600},"tiresia/02":{"a":0.6667,"s":667,"l":1600},"tiresia/03":{"a":0.7183,"s":718,"l":1724},"tiresia/04":{"a":0.6667,"s":667,"l":1600},"tiresia/05":{"a":0.6667,"s":667,"l":1600},"tiresia/06":{"a":0.6667,"s":667,"l":1600},"ubox/00":{"a":1.0,"s":1000,"l":2400},"ubox/01":{"a":1.0,"s":1000,"l":2400},"ubox/02":{"a":1.0,"s":1000,"l":2400},"ubox/03":{"a":1.0,"s":1000,"l":2400},"ubox/04":{"a":1.0,"s":1000,"l":2400},"ubox/05":{"a":1.0,"s":1000,"l":2400},"ubox/06":{"a":1.1429,"s":1000,"l":2400},"ubox/07":{"a":1.0,"s":1000,"l":2400},"ubox/08":{"a":0.705,"s":705,"l":1692},"ubox/09":{"a":0.705,"s":705,"l":1692},"ubox/10":{"a":1.7404,"s":1000,"l":2400},"ubox/11":{"a":1.7404,"s":1000,"l":2400},"ubox/12":{"a":1.7404,"s":1000,"l":2400},"ubox/13":{"a":1.7404,"s":1000,"l":2400},"ubox/14":{"a":0.7146,"s":715,"l":1715},"ubox/15":{"a":0.3167,"s":317,"l":760},"ubox/16":{"a":0.7,"s":700,"l":1680},"ubox/logo":{"a":1.0,"s":1000,"l":2000},"unascena/00":{"a":0.6975,"s":698,"l":1674},"unascena/01":{"a":0.7,"s":700,"l":1680},"unascena/02":{"a":1.7712,"s":1000,"l":2400},"unascena/03":{"a":1.7751,"s":1000,"l":2400},"unascena/04":{"a":1.6,"s":1000,"l":2400},"unascena/05":{"a":1.7844,"s":1000,"l":2400},"unascena/06":{"a":1.7791,"s":1000,"l":2400},"unascena/07":{"a":1.7831,"s":1000,"l":2400},"unascena/08":{"a":1.6,"s":1000,"l":2400},"unascena/09":{"a":1.7778,"s":1000,"l":1600},"unascena/10":{"a":1.7778,"s":1000,"l":1600},"unascena/11":{"a":1.7778,"s":1000,"l":1600},"zani/a0":{"a":1.3333,"s":1000,"l":2400},"zani/a1":{"a":1.3333,"s":1000,"l":2400},"zani/a2":{"a":1.3333,"s":1000,"l":2400},"zani/a3":{"a":1.3333,"s":1000,"l":2400},"zani/a4":{"a":1.3333,"s":1000,"l":2400},"zani/a5":{"a":1.3333,"s":1000,"l":2400},"zani/a6":{"a":1.3333,"s":1000,"l":2400},"zani/a7":{"a":1.3333,"s":1000,"l":2400},"zani/a8":{"a":1.3333,"s":1000,"l":2400},"zani/a9":{"a":1.3333,"s":1000,"l":2400},"zani/b0":{"a":1.3333,"s":1000,"l":1280},"zani/cv":{"a":1.3319,"s":1000,"l":2400},"zani/d0":{"a":1.0,"s":1000,"l":2400},"zani/d1":{"a":1.5,"s":1000,"l":2400},"zani/d2":{"a":0.6667,"s":667,"l":1600},"zani/d3":{"a":0.6667,"s":667,"l":1600},"zani/d4":{"a":0.6667,"s":667,"l":1600},"zani/d5":{"a":0.6667,"s":667,"l":1600},"zani/p0":{"a":1.0,"s":1000,"l":2400},"zani/p1":{"a":1.5,"s":1000,"l":2400},"zani/p2":{"a":0.6667,"s":667,"l":1600},"zani/p3":{"a":0.6667,"s":667,"l":1600},"zani/p4":{"a":0.6667,"s":667,"l":1600},"zani/p5":{"a":0.6667,"s":667,"l":1600},"zani/p6":{"a":0.6667,"s":667,"l":1600},"zani/p7":{"a":1.7783,"s":1000,"l":2134},"zani/p8":{"a":1.7783,"s":1000,"l":2134},"zani/v0":{"a":1.3333,"s":1000,"l":1280}};
+const PAL={"nomore":{"d":["#10151b","#dfe6ee","#e8722a"],"l":["#e6ebf0","#141b23","#b04a12"]},"igs":{"d":["#0b1820","#f3ebde","#ef4b35"],"l":["#efe4d2","#10222c","#b8301c"]},"unascena":{"d":["#15130e","#ece4d4","#c9a15f"],"l":["#efe8da","#2b261c","#7a5c2a"]},"numero10":{"d":["#070c14","#e8eef6","#5aaee8"],"l":["#e6edf5","#08111d","#1d64a8"]},"tiresia":{"d":["#0c0a09","#f4e7dc","#d0946a"],"l":["#f4e7dc","#1d1714","#8a4a26"]},"struttura":{"d":["#0f0f0e","#e8e6e1","#b9b3a7"],"l":["#e9e7e2","#111111","#625d55"]},"ubox":{"d":["#0f0f12","#f4f3ef","#f47a2a"],"l":["#f3f2ee","#131316","#b84f0c"]},"madri":{"d":["#100e0c","#efe8df","#e04a35"],"l":["#f2ede6","#17130f","#b3321f"]},"fnm":{"d":["#070b26","#eaedff","#7d97ff"],"l":["#e8ecfa","#0a1240","#1c3fc4"]},"mimappo":{"d":["#0e0e0e","#ececec","#a7a7a7"],"l":["#ececec","#0e0e0e","#5a5a5a"]},"santaliberta":{"d":["#050505","#dcdcdc","#e8341c"],"l":["#ededed","#0a0a0a","#b8260f"]},"antonieyau":{"d":["#060606","#e3e3e3","#e8341c"],"l":["#e3e3e3","#060606","#b02410"]},"posters":{"d":["#0f1212","#efe9e2","#e06a1f"],"l":["#efe9e2","#0f1212","#a8460c"]},"zani":{"d":["#130c0a","#f4ebe4","#f0623f"],"l":["#f2e9e0","#1b110d","#b3341b"]},"livemusic":{"d":["#120e10","#f4efe6","#ec7f3d"],"l":["#f3efe6","#1c1418","#a8480e"]}};
+const root=document.documentElement;
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const fine=matchMedia('(hover:hover) and (pointer:fine)').matches;
+const pad=n=>String(n).padStart(2,'0');
+const clamp=(v,a,b)=>Math.min(b,Math.max(a,v));
+
+const DISC={
+  gd:{plain:'Graphic Design',row:'Graphic design',dd:'Brand & event identity · posters & artworks · social media · merchandising · editorial'},
+  dr:{plain:'Direction',row:'Direction',dd:'Creative & art direction · concept · fashion editorials · music'},
+  ph:{plain:'Photography',row:'Photography',dd:'Portrait & editorial · live music · post-production & retouching'},
+  fm:{plain:'Film',row:'Film',dd:'Assistant director'}
+};
+
+const P=[
+ {id:'nomore',t:'nomo<span class="serif">(re)</span><span class="red">.</span>',tp:'nomo(re).',sub:'Identità Velate',year:'2024',client:'Thesis project — NABA',cat:'Editorial / Fashion Film',role:'Creative Direction · Graphic & Product Design · Fashion Film Direction',d:['dr'],cover:'00',alt:'04',trail:'05',
+  lead:'A project aimed to raise awareness, manifested in a collection of three simple objects that represent the burden of the distress experienced by a generation dealing with the digital world, when connected to the human body.',
+  body:['The dynamics of social media often lead to addiction and isolation; the superficiality of relationships shuts the door to humanity, and beauty becomes an obligation to be pursued.','We feel compelled to run, yet remain still, losing ourselves without truly observing the world around us.'],
+  quote:'The weight of an invisible veil becomes a wall.',
+  rows:[['02'],['03','04','05'],'Q',['01'],['06','07'],['08','09']],
+  chapters:[
+   {t:'Fashion <span class="serif">film</span>',m:'Direction · 2024',text:['The fashion film I directed for the project, followed by the backstage of the shoot.'],rows:[[{v:'film.mp4',p:'f0',c:1}],{label:'Backstage'},[{v:'backstage.mp4',p:'f1',c:1}]]},
+   {t:'Editorial <span class="serif">object</span>',m:'nomo(re).',rows:[['10']]}
+  ]},
+ {id:'igs',t:'IGS <span class="serif">Festival</span><span class="red">.</span>',tp:'Italian Global Series Festival',sub:'Social media 2026',year:'2026',client:'Italian Global Series Festival',cat:'Social media',role:'Graphic Design — social media content',d:['gd'],cover:'logo',card:'02',trail:'04',
+  lead:'Social media graphics for the second edition of the Italian Global Series Festival — the Italian festival dedicated to international TV series, held in Rimini and Riccione from 3 to 11 July 2026.',
+  body:['The festival’s key visuals turned each television genre into a surreal summer scene on the Riviera. My work was the social layer: adapting those images into posts and stories, and designing the competition showcases, screenings, award announcements and daily covers that accompanied the whole festival.'],
+  rows:[['01','02','03'],['04','05','06'],['07','08','09'],['10','12','13','11'],['14','15','16']],
+  credits:[['Festival','Italian Global Series — 2nd edition'],['Dates','3–11 July 2026, Rimini & Riccione']]},
+ {id:'unascena',t:'una <span class="serif">scena</span><span class="red">.</span>',tp:'una scena',sub:'un film di Andrea Vailati',year:'2026',client:'Short film by Andrea Vailati',cat:'Short Film',role:'Assistant Director · Creative Direction Assistant',d:['fm'],cover:'01',trail:'09',
+  lead:'Matilde, a young woman in her twenties, waits in the car wearing a nun’s habit, a cigarette between her fingers. Mic, in his fifties, walks up to her. They look at each other — testing, measuring, poking at old wounds.',
+  body:['On Andrea Vailati’s short film I worked both as assistant director and as creative direction assistant.','Their journey begins through a hazy, almost suspended Milan: fogged-up windows, long pauses, moments that feel borrowed from somewhere else. Something binds them — maybe a shared past, maybe just a similar kind of hurt.','Matilde. The name he would have given the child who never came into his life. He has written a scene; she suggests they bring it to life. What felt like a genuine conversation turns into a performance — a small play, tender and cruel at the same time.','<em>Was it all just a game? Or the truest way to say goodbye for the first time?</em>'],
+  rows:[['00','10'],['02','03'],['04','05','06'],['09','11'],['07','08']],
+  credits:[['Written & directed by','Andrea Vailati'],['Assistant director & creative direction assistant','Marco S. Zanini']]},
+ {id:'numero10',t:'Numero <span class="serif">10</span><span class="red">.</span>',tp:'Numero 10',sub:'Teatro Palapartenope, Napoli',year:'2026',client:'Teatro Palapartenope',cat:'Theatre campaign',role:'Graphic Design — poster & campaign',d:['gd'],cover:'00',alt:'05',trail:'02',
+  lead:'Poster campaign for Numero 10, a theatre show inspired by the story of Diego Armando Maradona, opening at Teatro Palapartenope in Naples on 3 October 2026.',
+  body:['The campaign went through four poster versions, adapted to every format — from 100×140 and A3 prints to a 6×3 m billboard, social posts and stories.','Alongside it, a cast reveal series built on the same visual world: a figure emerging from the stadium lights before the name appears.'],
+  rows:[],
+  credits:[['Venue','Teatro Palapartenope, Napoli'],['Opening','3 October 2026']]},
+ {id:'tiresia',t:'/Tiresia<span class="red">.</span>',tp:'Tiresia',sub:'aiseriT/',year:'2025',client:'Personal editorial',cat:'Editorial',role:'Art Direction & Color · Post Production',d:['dr'],cover:'00',alt:'01',trail:'02',
+  lead:'What’s our relationship with femininity? We’re often pushed to identify with a specific gender, without ever listening to the voice that speaks quietly within.',
+  body:['The outside world clouds our perception, limiting our gaze to what the mirror reflects, to a beauty shaped and sanctioned by society. This project borrows its title from Tiresias, the mythic figure who lived both male and female — not as contradiction but as vision.','Here, a man dreams of his own femininity and breaks free from the chains that hold him still, becoming the soul he has always known himself to be: beyond the mirror, beyond the rules, beyond the single name he was given.'],
+  quote:'Truth can exist in more than one form at once.',
+  rows:[['01','02','03'],'Q',['04','05','06']]},
+ {id:'struttura',t:'Struttura <span class="serif">Emotiva</span><span class="red">.</span>',tp:'Struttura Emotiva',sub:'/concept',year:'2026',client:'Personal editorial',cat:'Editorial',role:'Photography',d:['ph'],cover:'00',alt:'01',trail:'03',
+  lead:'Photography becomes a suspended space, more mental than physical. The body stands at the center of the narrative — not a fixed identity but a presence: a surface, a structure, an emotional form.',
+  body:['The image does not aim to describe; it explores the relationships between elements: light, skin, reflections. Gestures are reduced to their essence, poses remain restrained, creating a quiet sense of timelessness.','Clean compositions, a slow rhythm, careful attention to negative space. Each image balances opposing forces: stability and tension, control and release.'],
+  rows:[['01','02'],['03','04','05'],['06','07'],['08','09','10','11']]},
+ {id:'zani',t:'ZANI<span class="red">.</span>',tp:'ZANI',sub:'Creative direction of my music project',year:'2024–26',client:'ZANI — personal music project',cat:'Music',role:'Creative Direction — art & music direction',d:['dr'],cover:'cv',trail:'a5',
+  lead:'ZANI is my music project as a singer-songwriter. Beyond writing and performing, I oversee its creative direction and visual communication — artworks, shoots and films.',
+  body:['Every release is treated as its own visual world, with a brief, a palette and a story: from the album film of Dentro le storie degli altri, sprazzi di me to the pop colours of Primavera and the open fields of Distanti.'],
+  rows:[],
+  chapters:[
+   {t:'Dentro le storie degli altri, <span class="serif">sprazzi di me</span>',m:'Album film · 2026',text:['The film that accompanies the album: each character embodies one of its songs — Ballerina, California, Rondine, Stupide Ragioni, Alice, Due Passi Indietro, Universo.'],
+    rows:[[{v:'ballerina.mp4',p:'b0'},{v:'loop.mp4',p:'v0'}],['a1','a3'],['a2','a4','a5'],['a6','a7'],['a8','a0']],
+    credits:[['Directed by','Andrea Vailati'],['Editing & sound design','Andrea Salomone, Marco S. Zanini, Alex D’Errico']]},
+   {t:'Primavera',m:'Single · 2024',text:['Art and music direction. The brief: pop colour photography with bright, saturated tones, and a red thread running through every object on set — the T-shirt, the flowers, the balloon. A thread that ties two people together; red as passion.'],
+    rows:[['p0','p1'],['p2','p3','p4'],['p5','p6'],{label:'From the brief'},['p7','p8']]},
+   {t:'Distanti',m:'Single · 2024',text:['Creative direction of the artwork and visuals for Distanti.'],
+    rows:[['d0'],['d2','d3','d4','d5']]}
+  ]},
+ {id:'ubox',t:'University <span class="serif">Box</span>',tp:'University Box',sub:'Student Village Tour 2026',year:'2026',client:'University Box',cat:'Event identity / Merchandise',role:'Graphic Design',d:['gd'],cover:'logo',cp:1,card:'00',trail:'02',
+  lead:'Event identity and merchandise for the University Box Student Village Tour 2026, touring Milano, Torino, Roma and Palermo.',
+  body:['Four areas — Guadagna, Lavora, Partecipa, Risparmia — each with its own colour and icon, built into one system: football-style jerseys, sponsor apparel, backdrops, totems, badges, posters and printed gadgets.'],
+  rows:[['00','01','02','03'],['16','04','05'],['10','11'],['12','13'],['06','07']],
+  credits:[['Tour','Milano · Torino · Roma · Palermo']]},
+ {id:'madri',t:'<span class="serif">madri.</span>',tp:'Madri',sub:'Un documentario di Andrea Vailati',year:'2026',client:'ArteSettima',cat:'Documentary',role:'Junior Art Director · Assistant Director',d:['fm'],cover:'00',card:'06',
+  lead:'Madri is a documentary by Andrea Vailati, produced by ArteSettima: a journey through Italy’s regions to meet the grandmothers born in the 1930s — the last living memory of the twentieth century.',
+  body:['I worked on Madri as junior art director and assistant director.','The pages below come from the project presentation.'],
+  rows:[['01','02'],['03','04'],['05','06'],['07','08'],['09','10']],
+  credits:[['Director','Andrea Vailati'],['Production','ArteSettima'],['Photography','Simone Biavati'],['Director of photography','Thomas Noonan'],['Second DOP & camera operator','Tommaso Paris'],['Sound recordist','Luca Motta'],['Gaffer','Giorgio Razk'],['Junior art director & assistant director','Marco S. Zanini'],['Technical sponsor','Fujifilm Italia']]},
+ {id:'santaliberta',t:'Santa <span class="serif">Libertà!</span>',tp:'Oh, Santa Libertà!',sub:'Siamo solo figli della luce…',year:'2025',client:'Personal editorial',cat:'Editorial',role:'Creative Direction',d:['dr'],cover:'00',trail:'01',
+  lead:'Two young people grappling with the concept of parole. Imprisonment transforms from a physical reality into a psychological state, no longer tied to a specific place.',
+  body:['Home, once a symbol of safety and warmth, becomes an unrecognizable purgatory. The light outside takes on an almost sacred significance, sought by the young protagonists as they yearn for a freedom that feels almost mocking.'],
+  rows:[['01','02','03']]},
+ {id:'antonieyau',t:'Antonie <span class="serif">Yau</span>',tp:'Antonie Yau',sub:'Portrait series',year:'2025',client:'Editorial',cat:'Editorial',role:'Photography',d:['ph'],cover:'00',trail:'01',
+  lead:'A black and white portrait series between architecture and attitude.',body:[],
+  rows:[['01','02','03'],['04','05','06','07']]},
+ {id:'fnm',t:'FNM <span class="serif">/ Merch</span>',tp:'FNM / Merch',sub:'FNM sono le persone',year:'2025',client:'FNM — Ferrovie Nord Milano',cat:'Merchandising / Brand ambassadors',role:'Art Direction · Visual & Graphic Design',d:['gd'],cover:'m10',card:'m12',
+  lead:'“FNM sono le persone” — FNM is its people. A proposal for Ferrovie Nord Milano in two parts: a merchandising kit for travellers and a family of brand ambassadors that gives the company a human voice.',
+  body:['It all starts from the logo: the three letters — the silent acronym of a long industrial history — become people, with their own postures, rhythms and attitudes. From there, products and characters speak the same language, with an eye on the new generations.'],
+  rows:[],
+  chapters:[
+   {t:'Visual <span class="serif">merchandising</span>',m:'Traveller’s kit',text:['A kit built on four keywords — sustainable, practical, catchy, community — and meant as a bridge between generations: a recycled-cotton tote bag with the people-logo and hand-lettered, ironic phrases, a jacket holder, a card holder and a bottle holder in four colours. Useful objects that are also worth sharing — #vitainmovimento.'],
+    rows:[['m11','m12'],['m15','m16'],['m17','m18'],['m20']]},
+   {t:'Brand <span class="serif">ambassadors</span>',m:'FNM sono le persone',text:['FNM’s ambassadors are the people who shape the company every day by using its services. Each letter of the logo holds a different kind of traveller — La Sciura, Chip&Chop, Milo&Frank and La Family — each with a personality, habits and a voice of their own.'],
+    rows:[['m27','m28'],['m30','m31'],['m32','m33']]},
+   {t:'Cultural <span class="serif">heritage</span>',m:'Social media',text:['On social media the ambassadors become familiar faces that walk people through FNM’s cultural initiatives — from Diabolik at Milano Cadorna to an exhibition of historic radios at Milano-Bicocca University — with a lighter, less institutional tone.'],
+    rows:[['m41','m42'],['m43','m44']]},
+   {t:'Construction <span class="serif">sites</span>',m:'Malpensa T2 – Sempione · Seveso',text:['Construction sites are a delicate subject: detours, noise, delays, traffic. Here the ambassadors become mediators between FNM and citizens — first as a repeated graphic pattern that turns the hoardings into street art, then as short comic dialogues that tell people what the works will bring.'],
+    rows:[['m45','m46'],['m49','m53'],['m52'],['m55','m57'],['m63','m64']]}
+  ]},
+ {id:'mimappo',t:'<span class="serif">Mimappo</span>',tp:'Mimappo',sub:'Magazine',year:'2024',client:'NABA',cat:'Magazine',role:'Graphic Design',d:['gd'],cover:'00',
+  lead:'A small magazine that narrates personal evolutionary processes through passions or specific events.',
+  body:['The concept is to associate emotions with songs that have been the soundtrack to those moments, gathering everything into what appears to be the cover of a vinyl record.'],
+  rows:[['01','02','03'],['04','05','06']]},
+ {id:'livemusic',t:'Live <span class="serif">Music</span>',tp:'Live Music',sub:'Concert photography',year:'2024',client:'Live photography',cat:'Music',role:'Photography',d:['ph'],cover:null,card:'01',trail:'03',
+  lead:'',body:[],
+  rows:[{car:['00','01','02','03','04']}]},
+ {id:'posters',t:'Posters <span class="serif">&amp; Artworks</span>',tp:'Posters & Artworks',sub:'Music, events, personal',year:'2023–25',client:'Various',cat:'Posters / Artworks',role:'Graphic Design',d:['gd'],cover:'00',trail:'01',
+  lead:'A selection of posters and artworks for music, events and personal projects.',body:[],
+  rows:[['01','02','03','09'],['04','05','06','07'],['08']]}
+];
+const FEAT=['unascena','struttura','nomore','tiresia','fnm','ubox'].map(id=>P.find(p=>p.id===id));
+const ORDER=['igs','numero10','ubox','madri','zani','unascena','struttura','tiresia','santaliberta','antonieyau','fnm','nomore','mimappo','livemusic','posters'];
+const IDX=ORDER.map(id=>P.find(p=>p.id===id));
+P.forEach(p=>p.pal=PAL[p.id]);
+
+/* ---------- i18n dictionaries (English lives in the HTML and in the data above) ---------- */
+const LANGS=['en','it','fr','es','de'];
+const UI={
+ en:{projects:'projects',all:'All',cOpen:'Open',cRotate:'Rotate',cZoom:'Zoom',cNext:'Next',cView:'View',cDrag:'Drag',nextP:'Next project →',role:'Role',client:'Client / Context',disc:'Disciplines',year:'Year',palette:'Palette',copied:'Copied ✓',tDark:'Dark',tLight:'Light',mDark:'Dark mode',mLight:'Light mode',toDark:'Switch to dark mode',toLight:'Switch to light mode',mqA:'Available for collaborations',mqB:'Milano &amp; beyond',mqC:'Let’s talk',excerpt:'Film excerpt',film:'Film',prev:'Previous image',next:'Next image',gallery:'Gallery'},
+ it:{
+  title:'Marco S. Zanini',
+  desc:'Marco S. Zanini — creativo multidisciplinare con base a Milano. Graphic design, direzione creativa, art direction, fotografia e post-produzione, film.',
+  ldPf:'Portfolio — 2026',ldDisc:'Graphic design<br>Direzione creativa<br>Art direction<br>Fotografia<br>Film',
+  nWork:'Lavori',nDisc:'Discipline',nIdx:'Indice',nAbout:'Chi sono',nContact:'Contatti',aLang:'Lingua',
+  aStart:'Iniziamo un progetto',ctaH:'Iniziamo<br>un progetto',ctaP:'Identità, campagna, set o film — parliamone.',ctaB:'Scrivimi',altPortrait:'Ritratto di Marco S. Zanini',
+  statP:'progetti',statD:'5 discipline',kick:'Creativo multidisciplinare',
+  slot:'<li>Graphic design</li><li>Direzione creativa</li><li>Art direction</li><li>Fotografia</li><li>Post-produzione</li><li>Film</li><li>Graphic design</li>',
+  kr:'Con base a Milano, IT<br>Scorri ↓',
+  s1:'Cosa faccio',s1r:'Quattro discipline, un solo sguardo',dnote:'Passa sopra per un’anteprima — clicca una disciplina per filtrare l’indice',
+  s2:'Lavori selezionati',aSel:'Progetti selezionati',openP:'Apri il progetto',
+  s3:'Indice',s3r:'Filtra per disciplina · lista o griglia',s3h:'Indice',s3p:'Tutto in un unico posto. Ogni progetto ha la sua palette di colori — passa sopra una riga per entrarci.',
+  aFilter:'Filtra per disciplina',aView:'Vista',vList:'Lista',vGrid:'Griglia',
+  s4:'Chi sono',
+  abLead:'Un creativo versatile con un percorso multidisciplinare — dal <span class="serif">design industriale</span> alle <span class="serif">arti visive.</span>',
+  abCols:'<p>Mi sono laureato in Product Design alla NABA (Nuova Accademia di Belle Arti) di Milano. Durante gli studi mi sono spostato gradualmente dal design industriale verso le arti visive, sviluppando un forte interesse per la comunicazione, la direzione creativa e il graphic design.</p><p>Come cantautore, con il nome di <strong>ZANI</strong>, esploro questi interessi attraverso la musica, curando la direzione creativa e la comunicazione visiva del progetto.</p><p>Nel 2023 ho fatto parte della redazione del magazine della NABA per la Milano Design Week e, nello stesso anno, sono stato assistente alla didattica del professore e critico del design Massimo Martignoni, nel suo corso di Storia dell’architettura moderna.</p><p>Dopo la laurea ho lavorato per un anno come graphic designer per FNM e Buccellati, prima di diventare freelance. Da allora ho curato identità grafiche e comunicazione visiva per festival, eventi musicali e teatrali ed editoriali di moda — e sono al secondo anno come aiuto regista al fianco di Andrea Vailati, fondatore di ArteSettima.</p>',
+  cv:'<div><dt class="label">Formazione</dt><dd>Product Design <em>— NABA, Milano</em></dd></div><div><dt class="label">Esperienza</dt><dd><span>Creativo freelance <em>— identità, campagne, editoriali</em></span><span>Aiuto regista <em>— ArteSettima / Andrea Vailati</em></span><span>Graphic designer <em>— FNM, Buccellati</em></span><span>Assistente alla didattica <em>— Prof. Massimo Martignoni, NABA</em></span></dd></div><div><dt class="label">Editoria</dt><dd>Magazine della NABA <em>— Milano Design Week 2023</em></dd></div><div><dt class="label">Musica</dt><dd>ZANI <em>— cantautore e direzione creativa</em></dd></div>',
+  collab:'Collaborazioni selezionate',
+  s5:'Contatti',cH:'Facciamo<br>qualcosa di <span class="serif">vero.</span>',copyHint:'Clicca per copiare',telCopy:'Telefono — copia',top:'Torna su ↑',
+  close:'Chiudi',aPrevP:'Progetto precedente',aNextP:'Progetto successivo',aViewer:'Visualizzatore di immagini',lbClose:'Chiudi ×',lbPrev:'← Prec.',lbNext:'Succ. →',
+  projects:'progetti',all:'Tutti',cOpen:'Apri',cRotate:'Ruota',cZoom:'Zoom',cNext:'Avanti',cView:'Vedi',cDrag:'Trascina',nextP:'Progetto successivo →',
+  role:'Ruolo',client:'Cliente / Contesto',disc:'Discipline',year:'Anno',palette:'Palette',copied:'Copiato ✓',
+  tDark:'Scuro',tLight:'Chiaro',mDark:'Tema scuro',mLight:'Tema chiaro',toDark:'Passa al tema scuro',toLight:'Passa al tema chiaro',
+  mqA:'Disponibile per collaborazioni',mqB:'Milano e oltre',mqC:'Parliamone',excerpt:'Estratto dal film',film:'Film',prev:'Immagine precedente',next:'Immagine successiva',gallery:'Galleria'
+ },
+ fr:{
+  title:'Marco S. Zanini',
+  desc:'Marco S. Zanini — créatif pluridisciplinaire basé à Milan. Design graphique, direction créative, direction artistique, photographie et post-production, film.',
+  ldPf:'Portfolio — 2026',ldDisc:'Design graphique<br>Direction créative<br>Direction artistique<br>Photographie<br>Film',
+  nWork:'Projets',nDisc:'Disciplines',nIdx:'Index',nAbout:'À propos',nContact:'Contact',aLang:'Langue',
+  aStart:'Démarrons un projet',ctaH:'Démarrons<br>un projet',ctaP:'Identité, campagne, plateau ou film — parlons-en.',ctaB:'Écrivez-moi',altPortrait:'Portrait de Marco S. Zanini',
+  statP:'projets',statD:'5 disciplines',kick:'Créatif pluridisciplinaire',
+  slot:'<li>Design graphique</li><li>Direction créative</li><li>Direction artistique</li><li>Photographie</li><li>Post-production</li><li>Film</li><li>Design graphique</li>',
+  kr:'Basé à Milan, IT<br>Faites défiler ↓',
+  s1:'Ce que je fais',s1r:'Quatre disciplines, un seul regard',dnote:'Survolez pour un aperçu — cliquez sur une discipline pour filtrer l’index',
+  s2:'Projets sélectionnés',aSel:'Projets sélectionnés',openP:'Ouvrir le projet',
+  s3:'Index',s3r:'Filtrer par discipline · liste ou grille',s3h:'Index',s3p:'Tout au même endroit. Chaque projet a sa propre palette de couleurs — survolez une ligne pour y entrer.',
+  aFilter:'Filtrer par discipline',aView:'Affichage',vList:'Liste',vGrid:'Grille',
+  s4:'À propos',
+  abLead:'Un créatif polyvalent au parcours pluridisciplinaire — du <span class="serif">design industriel</span> aux <span class="serif">arts visuels.</span>',
+  abCols:'<p>Je suis diplômé en Product Design de la NABA (Nuova Accademia di Belle Arti) à Milan. Pendant mes études, je suis passé peu à peu du design industriel aux arts visuels, en développant un vif intérêt pour la communication, la direction créative et le design graphique.</p><p>Auteur-compositeur-interprète sous le nom de <strong>ZANI</strong>, j’explore ces intérêts à travers la musique, en assurant la direction créative et la communication visuelle du projet.</p><p>En 2023, j’ai fait partie de l’équipe éditoriale du magazine de la NABA pour la Milan Design Week et, la même année, j’ai été assistant d’enseignement auprès du professeur et critique de design Massimo Martignoni, dans son cours d’histoire de l’architecture moderne.</p><p>Après mon diplôme, j’ai travaillé un an comme graphiste pour FNM et Buccellati, avant de devenir indépendant. Depuis, je conçois des identités graphiques et de la communication visuelle pour des festivals, des événements musicaux et théâtraux et des éditoriaux de mode — et j’en suis à ma deuxième année comme assistant réalisateur aux côtés d’Andrea Vailati, fondateur d’ArteSettima.</p>',
+  cv:'<div><dt class="label">Formation</dt><dd>Product Design <em>— NABA, Milan</em></dd></div><div><dt class="label">Expérience</dt><dd><span>Créatif indépendant <em>— identités, campagnes, éditoriaux</em></span><span>Assistant réalisateur <em>— ArteSettima / Andrea Vailati</em></span><span>Graphiste <em>— FNM, Buccellati</em></span><span>Assistant d’enseignement <em>— Prof. Massimo Martignoni, NABA</em></span></dd></div><div><dt class="label">Édition</dt><dd>Magazine de la NABA <em>— Milan Design Week 2023</em></dd></div><div><dt class="label">Musique</dt><dd>ZANI <em>— auteur-compositeur-interprète et direction créative</em></dd></div>',
+  collab:'Collaborations choisies',
+  s5:'Contact',cH:'Créons<br>quelque chose de <span class="serif">vrai.</span>',copyHint:'Cliquez pour copier',telCopy:'Téléphone — copier',top:'Retour en haut ↑',
+  close:'Fermer',aPrevP:'Projet précédent',aNextP:'Projet suivant',aViewer:'Visionneuse d’images',lbClose:'Fermer ×',lbPrev:'← Préc.',lbNext:'Suiv. →',
+  projects:'projets',all:'Tous',cOpen:'Ouvrir',cRotate:'Tourner',cZoom:'Zoom',cNext:'Suivant',cView:'Voir',cDrag:'Glisser',nextP:'Projet suivant →',
+  role:'Rôle',client:'Client / Contexte',disc:'Disciplines',year:'Année',palette:'Palette',copied:'Copié ✓',
+  tDark:'Sombre',tLight:'Clair',mDark:'Mode sombre',mLight:'Mode clair',toDark:'Passer en mode sombre',toLight:'Passer en mode clair',
+  mqA:'Disponible pour des collaborations',mqB:'Milan &amp; au-delà',mqC:'Parlons-en',excerpt:'Extrait du film',film:'Film',prev:'Image précédente',next:'Image suivante',gallery:'Galerie'
+ },
+ es:{
+  title:'Marco S. Zanini',
+  desc:'Marco S. Zanini — creativo multidisciplinar afincado en Milán. Diseño gráfico, dirección creativa, dirección de arte, fotografía y posproducción, cine.',
+  ldPf:'Portfolio — 2026',ldDisc:'Diseño gráfico<br>Dirección creativa<br>Dirección de arte<br>Fotografía<br>Cine',
+  nWork:'Trabajos',nDisc:'Disciplinas',nIdx:'Índice',nAbout:'Sobre mí',nContact:'Contacto',aLang:'Idioma',
+  aStart:'Empecemos un proyecto',ctaH:'Empecemos<br>un proyecto',ctaP:'Identidad, campaña, set o película — hablemos.',ctaB:'Escríbeme',altPortrait:'Retrato de Marco S. Zanini',
+  statP:'proyectos',statD:'5 disciplinas',kick:'Creativo multidisciplinar',
+  slot:'<li>Diseño gráfico</li><li>Dirección creativa</li><li>Dirección de arte</li><li>Fotografía</li><li>Posproducción</li><li>Cine</li><li>Diseño gráfico</li>',
+  kr:'Afincado en Milán, IT<br>Desliza ↓',
+  s1:'Lo que hago',s1r:'Cuatro disciplinas, una sola mirada',dnote:'Pasa el cursor para ver una vista previa — haz clic en una disciplina para filtrar el índice',
+  s2:'Trabajos seleccionados',aSel:'Proyectos seleccionados',openP:'Abrir el proyecto',
+  s3:'Índice',s3r:'Filtrar por disciplina · lista o cuadrícula',s3h:'Índice',s3p:'Todo en un solo lugar. Cada proyecto tiene su propia paleta de colores — pasa el cursor por una fila para entrar en ella.',
+  aFilter:'Filtrar por disciplina',aView:'Vista',vList:'Lista',vGrid:'Cuadrícula',
+  s4:'Sobre mí',
+  abLead:'Un creativo versátil con una trayectoria multidisciplinar — del <span class="serif">diseño industrial</span> a las <span class="serif">artes visuales.</span>',
+  abCols:'<p>Me gradué en Diseño de Producto en la NABA (Nuova Accademia di Belle Arti) de Milán. Durante la carrera pasé poco a poco del diseño industrial a las artes visuales, y desarrollé un gran interés por la comunicación, la dirección creativa y el diseño gráfico.</p><p>Como cantautor, con el nombre de <strong>ZANI</strong>, exploro estos intereses a través de la música y me ocupo de la dirección creativa y la comunicación visual del proyecto.</p><p>En 2023 formé parte del equipo editorial de la revista de la NABA para la Milan Design Week y, ese mismo año, fui asistente docente del profesor y crítico de diseño Massimo Martignoni en su curso de Historia de la Arquitectura Moderna.</p><p>Tras graduarme trabajé un año como diseñador gráfico para FNM y Buccellati, antes de establecerme como freelance. Desde entonces he desarrollado identidades gráficas y comunicación visual para festivales, eventos musicales y teatrales y editoriales de moda — y estoy en mi segundo año como ayudante de dirección junto a Andrea Vailati, fundador de ArteSettima.</p>',
+  cv:'<div><dt class="label">Formación</dt><dd>Diseño de Producto <em>— NABA, Milán</em></dd></div><div><dt class="label">Experiencia</dt><dd><span>Creativo freelance <em>— identidades, campañas, editoriales</em></span><span>Ayudante de dirección <em>— ArteSettima / Andrea Vailati</em></span><span>Diseñador gráfico <em>— FNM, Buccellati</em></span><span>Asistente docente <em>— Prof. Massimo Martignoni, NABA</em></span></dd></div><div><dt class="label">Editorial</dt><dd>Revista de la NABA <em>— Milan Design Week 2023</em></dd></div><div><dt class="label">Música</dt><dd>ZANI <em>— cantautor y dirección creativa</em></dd></div>',
+  collab:'Colaboraciones seleccionadas',
+  s5:'Contacto',cH:'Hagamos<br>algo <span class="serif">real.</span>',copyHint:'Haz clic para copiar',telCopy:'Teléfono — copiar',top:'Volver arriba ↑',
+  close:'Cerrar',aPrevP:'Proyecto anterior',aNextP:'Proyecto siguiente',aViewer:'Visor de imágenes',lbClose:'Cerrar ×',lbPrev:'← Ant.',lbNext:'Sig. →',
+  projects:'proyectos',all:'Todos',cOpen:'Abrir',cRotate:'Girar',cZoom:'Zoom',cNext:'Siguiente',cView:'Ver',cDrag:'Arrastra',nextP:'Siguiente proyecto →',
+  role:'Rol',client:'Cliente / Contexto',disc:'Disciplinas',year:'Año',palette:'Paleta',copied:'Copiado ✓',
+  tDark:'Oscuro',tLight:'Claro',mDark:'Modo oscuro',mLight:'Modo claro',toDark:'Cambiar a modo oscuro',toLight:'Cambiar a modo claro',
+  mqA:'Disponible para colaboraciones',mqB:'Milán y más allá',mqC:'Hablemos',excerpt:'Fragmento de la película',film:'Película',prev:'Imagen anterior',next:'Imagen siguiente',gallery:'Galería'
+ },
+ de:{
+  title:'Marco S. Zanini',
+  desc:'Marco S. Zanini — multidisziplinärer Kreativer aus Mailand. Grafikdesign, Creative Direction, Art Direction, Fotografie und Postproduktion, Film.',
+  ldPf:'Portfolio — 2026',ldDisc:'Grafikdesign<br>Creative Direction<br>Art Direction<br>Fotografie<br>Film',
+  nWork:'Arbeiten',nDisc:'Disziplinen',nIdx:'Index',nAbout:'Über mich',nContact:'Kontakt',aLang:'Sprache',
+  aStart:'Starten wir ein Projekt',ctaH:'Starten wir<br>ein Projekt',ctaP:'Identity, Kampagne, Set oder Film — lass uns darüber reden.',ctaB:'Schreib mir',altPortrait:'Porträt von Marco S. Zanini',
+  statP:'Projekte',statD:'5 Disziplinen',kick:'Multidisziplinärer Kreativer',
+  slot:'<li>Grafikdesign</li><li>Creative Direction</li><li>Art Direction</li><li>Fotografie</li><li>Postproduktion</li><li>Film</li><li>Grafikdesign</li>',
+  kr:'Ansässig in Mailand, IT<br>Scrollen ↓',
+  s1:'Was ich mache',s1r:'Vier Disziplinen, ein Blick',dnote:'Für eine Vorschau darüberfahren — eine Disziplin anklicken, um den Index zu filtern',
+  s2:'Ausgewählte Arbeiten',aSel:'Ausgewählte Projekte',openP:'Projekt öffnen',
+  s3:'Index',s3r:'Nach Disziplin filtern · Liste oder Raster',s3h:'Index',s3p:'Alles an einem Ort. Jedes Projekt hat seine eigene Farbpalette — fahr über eine Zeile, um einzutauchen.',
+  aFilter:'Nach Disziplin filtern',aView:'Ansicht',vList:'Liste',vGrid:'Raster',
+  s4:'Über mich',
+  abLead:'Ein vielseitiger Kreativer mit multidisziplinärem Hintergrund — vom <span class="serif">Industriedesign</span> zu den <span class="serif">visuellen Künsten.</span>',
+  abCols:'<p>Ich habe Produktdesign an der NABA (Nuova Accademia di Belle Arti) in Mailand studiert. Während des Studiums habe ich mich nach und nach vom Industriedesign zu den visuellen Künsten bewegt und ein starkes Interesse an Kommunikation, Creative Direction und Grafikdesign entwickelt.</p><p>Als Singer-Songwriter unter dem Namen <strong>ZANI</strong> erkunde ich diese Interessen über die Musik und verantworte die Creative Direction und die visuelle Kommunikation des Projekts.</p><p>2023 war ich Teil der Redaktion des NABA-Magazins zur Milan Design Week und im selben Jahr Lehrassistent des Professors und Designkritikers Massimo Martignoni in seinem Kurs zur Geschichte der modernen Architektur.</p><p>Nach dem Abschluss habe ich ein Jahr lang als Grafikdesigner für FNM und Buccellati gearbeitet, bevor ich mich selbstständig gemacht habe. Seitdem gestalte ich Erscheinungsbilder und visuelle Kommunikation für Festivals, Musik- und Theaterevents sowie Modeeditorials — und bin im zweiten Jahr Regieassistent an der Seite von Andrea Vailati, dem Gründer von ArteSettima.</p>',
+  cv:'<div><dt class="label">Ausbildung</dt><dd>Produktdesign <em>— NABA, Mailand</em></dd></div><div><dt class="label">Erfahrung</dt><dd><span>Freier Kreativer <em>— Identities, Kampagnen, Editorials</em></span><span>Regieassistent <em>— ArteSettima / Andrea Vailati</em></span><span>Grafikdesigner <em>— FNM, Buccellati</em></span><span>Lehrassistent <em>— Prof. Massimo Martignoni, NABA</em></span></dd></div><div><dt class="label">Editorial</dt><dd>NABA-Magazin <em>— Milan Design Week 2023</em></dd></div><div><dt class="label">Musik</dt><dd>ZANI <em>— Singer-Songwriter &amp; Creative Direction</em></dd></div>',
+  collab:'Ausgewählte Kooperationen',
+  s5:'Kontakt',cH:'Machen wir<br>etwas <span class="serif">Echtes.</span>',copyHint:'Zum Kopieren klicken',telCopy:'Telefon — kopieren',top:'Nach oben ↑',
+  close:'Schließen',aPrevP:'Vorheriges Projekt',aNextP:'Nächstes Projekt',aViewer:'Bildbetrachter',lbClose:'Schließen ×',lbPrev:'← Zurück',lbNext:'Weiter →',
+  projects:'Projekte',all:'Alle',cOpen:'Öffnen',cRotate:'Drehen',cZoom:'Zoom',cNext:'Weiter',cView:'Ansehen',cDrag:'Ziehen',nextP:'Nächstes Projekt →',
+  role:'Rolle',client:'Kunde / Kontext',disc:'Disziplinen',year:'Jahr',palette:'Palette',copied:'Kopiert ✓',
+  tDark:'Dunkel',tLight:'Hell',mDark:'Dunkler Modus',mLight:'Heller Modus',toDark:'Zum dunklen Modus wechseln',toLight:'Zum hellen Modus wechseln',
+  mqA:'Offen für Kooperationen',mqB:'Mailand &amp; darüber hinaus',mqC:'Lass uns reden',excerpt:'Filmausschnitt',film:'Film',prev:'Vorheriges Bild',next:'Nächstes Bild',gallery:'Galerie'
+ }
+};
+
+/* disciplines */
+const DL={
+ it:{gd:{plain:'Graphic design',row:'Graphic design',dd:'Identità di brand ed eventi · poster e artwork · social media · merchandising · editoria'},dr:{plain:'Direzione',row:'Direzione',dd:'Direzione creativa e artistica · concept · editoriali di moda · musica'},ph:{plain:'Fotografia',row:'Fotografia',dd:'Ritratto ed editoriale · musica live · post-produzione e ritocco'},fm:{plain:'Film',row:'Film',dd:'Aiuto regista'}},
+ fr:{gd:{plain:'Design graphique',row:'Design graphique',dd:'Identité de marque et d’événement · affiches et artworks · réseaux sociaux · merchandising · édition'},dr:{plain:'Direction',row:'Direction',dd:'Direction créative et artistique · concept · éditoriaux de mode · musique'},ph:{plain:'Photographie',row:'Photographie',dd:'Portrait et éditorial · musique live · post-production et retouche'},fm:{plain:'Film',row:'Film',dd:'Assistant réalisateur'}},
+ es:{gd:{plain:'Diseño gráfico',row:'Diseño gráfico',dd:'Identidad de marca y de eventos · carteles y artworks · redes sociales · merchandising · editorial'},dr:{plain:'Dirección',row:'Dirección',dd:'Dirección creativa y de arte · concepto · editoriales de moda · música'},ph:{plain:'Fotografía',row:'Fotografía',dd:'Retrato y editorial · música en directo · posproducción y retoque'},fm:{plain:'Cine',row:'Cine',dd:'Ayudante de dirección'}},
+ de:{gd:{plain:'Grafikdesign',row:'Grafikdesign',dd:'Brand & Event Identity · Plakate & Artworks · Social Media · Merchandising · Editorial'},dr:{plain:'Direction',row:'Direction',dd:'Creative & Art Direction · Konzept · Modeeditorials · Musik'},ph:{plain:'Fotografie',row:'Fotografie',dd:'Porträt & Editorial · Livemusik · Postproduktion & Retusche'},fm:{plain:'Film',row:'Film',dd:'Regieassistent'}}
+};
+
+/* short phrases from the project data (categories, roles, clients, subtitles, chapter titles, credits), keyed by the English text */
+const PH={
+ it:{
+  'Editorial / Fashion Film':'Editoriale / Fashion film','Social media':'Social media','Short Film':'Cortometraggio','Theatre campaign':'Campagna teatrale','Editorial':'Editoriale','Music':'Musica','Event identity / Merchandise':'Identità di evento / Merchandising','Documentary':'Documentario','Merchandising / Brand ambassadors':'Merchandising / Brand ambassador','Magazine':'Magazine','Posters / Artworks':'Poster / Artwork',
+  'Creative Direction · Graphic & Product Design · Fashion Film Direction':'Direzione creativa · Graphic e product design · Regia del fashion film','Graphic Design — social media content':'Graphic design — contenuti social','Assistant Director · Creative Direction Assistant':'Aiuto regia · Assistente alla direzione creativa','Graphic Design — poster & campaign':'Graphic design — poster e campagna','Art Direction & Color · Post Production':'Art direction e colore · Post-produzione','Photography':'Fotografia','Creative Direction — art & music direction':'Direzione creativa — direzione artistica e musicale','Graphic Design':'Graphic design','Junior Art Director · Assistant Director':'Junior art director · Aiuto regia','Creative Direction':'Direzione creativa','Art Direction · Visual & Graphic Design':'Art direction · Visual e graphic design',
+  'Thesis project — NABA':'Progetto di tesi — NABA','Short film by Andrea Vailati':'Cortometraggio di Andrea Vailati','Personal editorial':'Editoriale personale','ZANI — personal music project':'ZANI — progetto musicale personale','Live photography':'Fotografia live','Various':'Vari',
+  'Social media 2026':'Social media 2026','Creative direction of my music project':'Direzione creativa del mio progetto musicale','Portrait series':'Serie di ritratti','Concert photography':'Fotografia di concerti','Music, events, personal':'Musica, eventi, progetti personali',
+  'Editorial <span class="serif">object</span>':'Oggetto <span class="serif">editoriale</span>','Brand <span class="serif">ambassadors</span>':'Brand <span class="serif">ambassador</span>','Cultural <span class="serif">heritage</span>':'Patrimonio <span class="serif">culturale</span>','Construction <span class="serif">sites</span>':'I <span class="serif">cantieri</span>',
+  'Direction · 2024':'Regia · 2024','Album film · 2026':'Film dell’album · 2026','Single · 2024':'Singolo · 2024','Traveller’s kit':'Kit del viaggiatore',
+  'From the brief':'Dal brief',
+  'Dates':'Date','Written & directed by':'Scritto e diretto da','Assistant director & creative direction assistant':'Aiuto regista e assistente alla direzione creativa','Venue':'Luogo','Opening':'Debutto','Directed by':'Regia','Editing & sound design':'Montaggio e sound design','Director':'Regia','Production':'Produzione','Director of photography':'Direttore della fotografia','Second DOP & camera operator':'Secondo DOP e operatore di camera','Sound recordist':'Fonico di scena','Junior art director & assistant director':'Junior art director e aiuto regista','Technical sponsor':'Sponsor tecnico',
+  'Italian Global Series — 2nd edition':'Italian Global Series — 2ª edizione','3–11 July 2026, Rimini & Riccione':'3–11 luglio 2026, Rimini e Riccione','3 October 2026':'3 ottobre 2026'
+ },
+ fr:{
+  'Editorial / Fashion Film':'Éditorial / Fashion film','Social media':'Réseaux sociaux','Short Film':'Court métrage','Theatre campaign':'Campagne théâtrale','Editorial':'Éditorial','Music':'Musique','Event identity / Merchandise':'Identité événementielle / Merchandising','Documentary':'Documentaire','Merchandising / Brand ambassadors':'Merchandising / Ambassadeurs de marque','Magazine':'Magazine','Posters / Artworks':'Affiches / Artworks',
+  'Creative Direction · Graphic & Product Design · Fashion Film Direction':'Direction créative · Design graphique et produit · Réalisation du fashion film','Graphic Design — social media content':'Design graphique — contenus pour les réseaux sociaux','Assistant Director · Creative Direction Assistant':'Assistant réalisateur · Assistant à la direction créative','Graphic Design — poster & campaign':'Design graphique — affiche et campagne','Art Direction & Color · Post Production':'Direction artistique et couleur · Post-production','Photography':'Photographie','Creative Direction — art & music direction':'Direction créative — direction artistique et musicale','Graphic Design':'Design graphique','Junior Art Director · Assistant Director':'Directeur artistique junior · Assistant réalisateur','Creative Direction':'Direction créative','Art Direction · Visual & Graphic Design':'Direction artistique · Design visuel et graphique',
+  'Thesis project — NABA':'Projet de diplôme — NABA','Short film by Andrea Vailati':'Court métrage d’Andrea Vailati','Personal editorial':'Éditorial personnel','ZANI — personal music project':'ZANI — projet musical personnel','Live photography':'Photographie live','Various':'Divers',
+  'Social media 2026':'Réseaux sociaux 2026','Creative direction of my music project':'Direction créative de mon projet musical','Portrait series':'Série de portraits','Concert photography':'Photographie de concert','Music, events, personal':'Musique, événements, projets personnels',
+  'Editorial <span class="serif">object</span>':'Objet <span class="serif">éditorial</span>','Brand <span class="serif">ambassadors</span>':'Ambassadeurs <span class="serif">de marque</span>','Cultural <span class="serif">heritage</span>':'Patrimoine <span class="serif">culturel</span>','Construction <span class="serif">sites</span>':'Les <span class="serif">chantiers</span>',
+  'Direction · 2024':'Réalisation · 2024','Album film · 2026':'Film de l’album · 2026','Traveller’s kit':'Kit du voyageur',
+  'Backstage':'Making-of','From the brief':'Extrait du brief',
+  'Dates':'Dates','Written & directed by':'Écrit et réalisé par','Assistant director & creative direction assistant':'Assistant réalisateur et assistant à la direction créative','Venue':'Lieu','Opening':'Première','Directed by':'Réalisé par','Editing & sound design':'Montage et sound design','Tour':'Tournée','Director':'Réalisation','Production':'Production','Director of photography':'Directeur de la photographie','Second DOP & camera operator':'Second chef opérateur et cadreur','Sound recordist':'Ingénieur du son','Gaffer':'Chef électricien','Junior art director & assistant director':'Directeur artistique junior et assistant réalisateur','Technical sponsor':'Partenaire technique',
+  'Italian Global Series — 2nd edition':'Italian Global Series — 2e édition','3–11 July 2026, Rimini & Riccione':'3–11 juillet 2026, Rimini et Riccione','3 October 2026':'3 octobre 2026'
+ },
+ es:{
+  'Editorial / Fashion Film':'Editorial / Fashion film','Social media':'Redes sociales','Short Film':'Cortometraje','Theatre campaign':'Campaña teatral','Editorial':'Editorial','Music':'Música','Event identity / Merchandise':'Identidad de evento / Merchandising','Documentary':'Documental','Merchandising / Brand ambassadors':'Merchandising / Embajadores de marca','Magazine':'Revista','Posters / Artworks':'Carteles / Artworks',
+  'Creative Direction · Graphic & Product Design · Fashion Film Direction':'Dirección creativa · Diseño gráfico y de producto · Dirección del fashion film','Graphic Design — social media content':'Diseño gráfico — contenidos para redes sociales','Assistant Director · Creative Direction Assistant':'Ayudante de dirección · Asistente de dirección creativa','Graphic Design — poster & campaign':'Diseño gráfico — cartel y campaña','Art Direction & Color · Post Production':'Dirección de arte y color · Posproducción','Photography':'Fotografía','Creative Direction — art & music direction':'Dirección creativa — dirección artística y musical','Graphic Design':'Diseño gráfico','Junior Art Director · Assistant Director':'Director de arte junior · Ayudante de dirección','Creative Direction':'Dirección creativa','Art Direction · Visual & Graphic Design':'Dirección de arte · Diseño visual y gráfico',
+  'Thesis project — NABA':'Proyecto de fin de carrera — NABA','Short film by Andrea Vailati':'Cortometraje de Andrea Vailati','Personal editorial':'Editorial personal','ZANI — personal music project':'ZANI — proyecto musical personal','Live photography':'Fotografía en directo','Various':'Varios',
+  'Social media 2026':'Redes sociales 2026','Creative direction of my music project':'Dirección creativa de mi proyecto musical','Portrait series':'Serie de retratos','Concert photography':'Fotografía de conciertos','Music, events, personal':'Música, eventos, proyectos personales',
+  'Editorial <span class="serif">object</span>':'Objeto <span class="serif">editorial</span>','Brand <span class="serif">ambassadors</span>':'Embajadores <span class="serif">de marca</span>','Cultural <span class="serif">heritage</span>':'Patrimonio <span class="serif">cultural</span>','Construction <span class="serif">sites</span>':'Las <span class="serif">obras</span>',
+  'Direction · 2024':'Dirección · 2024','Album film · 2026':'Película del álbum · 2026','Traveller’s kit':'Kit del viajero',
+  'Backstage':'Making of','From the brief':'Del brief',
+  'Dates':'Fechas','Written & directed by':'Escrito y dirigido por','Assistant director & creative direction assistant':'Ayudante de dirección y asistente de dirección creativa','Venue':'Lugar','Opening':'Estreno','Directed by':'Dirigido por','Editing & sound design':'Montaje y diseño de sonido','Tour':'Gira','Director':'Dirección','Production':'Producción','Director of photography':'Director de fotografía','Second DOP & camera operator':'Segundo director de fotografía y operador de cámara','Sound recordist':'Sonidista','Gaffer':'Jefe de eléctricos','Junior art director & assistant director':'Director de arte junior y ayudante de dirección','Technical sponsor':'Patrocinador técnico',
+  'Italian Global Series — 2nd edition':'Italian Global Series — 2.ª edición','3–11 July 2026, Rimini & Riccione':'3–11 de julio de 2026, Rimini y Riccione','3 October 2026':'3 de octubre de 2026'
+ },
+ de:{
+  'Social media':'Social Media','Short Film':'Kurzfilm','Theatre campaign':'Theaterkampagne','Music':'Musik','Event identity / Merchandise':'Event-Identity / Merchandise','Documentary':'Dokumentarfilm','Merchandising / Brand ambassadors':'Merchandising / Brand Ambassadors','Magazine':'Magazin','Posters / Artworks':'Plakate / Artworks',
+  'Creative Direction · Graphic & Product Design · Fashion Film Direction':'Creative Direction · Grafik- & Produktdesign · Regie des Fashion Films','Graphic Design — social media content':'Grafikdesign — Social-Media-Content','Assistant Director · Creative Direction Assistant':'Regieassistenz · Assistenz der Creative Direction','Graphic Design — poster & campaign':'Grafikdesign — Plakat & Kampagne','Art Direction & Color · Post Production':'Art Direction & Farbe · Postproduktion','Photography':'Fotografie','Creative Direction — art & music direction':'Creative Direction — künstlerische & musikalische Leitung','Graphic Design':'Grafikdesign','Junior Art Director · Assistant Director':'Junior Art Director · Regieassistenz','Art Direction · Visual & Graphic Design':'Art Direction · Visual- & Grafikdesign',
+  'Thesis project — NABA':'Abschlussarbeit — NABA','Short film by Andrea Vailati':'Kurzfilm von Andrea Vailati','Personal editorial':'Freies Editorial','ZANI — personal music project':'ZANI — persönliches Musikprojekt','Live photography':'Livefotografie','Various':'Verschiedene',
+  'Social media 2026':'Social Media 2026','Creative direction of my music project':'Creative Direction meines Musikprojekts','Portrait series':'Porträtserie','Concert photography':'Konzertfotografie','Music, events, personal':'Musik, Events, freie Projekte',
+  'Fashion <span class="serif">film</span>':'Fashion <span class="serif">Film</span>','Editorial <span class="serif">object</span>':'Editoriales <span class="serif">Objekt</span>','Visual <span class="serif">merchandising</span>':'Visual <span class="serif">Merchandising</span>','Brand <span class="serif">ambassadors</span>':'Brand <span class="serif">Ambassadors</span>','Cultural <span class="serif">heritage</span>':'Kulturelles <span class="serif">Erbe</span>','Construction <span class="serif">sites</span>':'Die <span class="serif">Baustellen</span>',
+  'Direction · 2024':'Regie · 2024','Album film · 2026':'Albumfilm · 2026','Traveller’s kit':'Reise-Kit',
+  'From the brief':'Aus dem Briefing',
+  'Dates':'Termine','Written & directed by':'Buch & Regie','Assistant director & creative direction assistant':'Regieassistenz & Assistenz der Creative Direction','Venue':'Spielort','Opening':'Premiere','Directed by':'Regie','Editing & sound design':'Schnitt & Sounddesign','Director':'Regie','Production':'Produktion','Director of photography':'Bildgestaltung','Second DOP & camera operator':'Zweiter DOP & Kameraoperator','Sound recordist':'Originalton','Gaffer':'Oberbeleuchter','Junior art director & assistant director':'Junior Art Director & Regieassistenz','Technical sponsor':'Technischer Sponsor',
+  'Italian Global Series — 2nd edition':'Italian Global Series — 2. Ausgabe','3–11 July 2026, Rimini & Riccione':'3.–11. Juli 2026, Rimini & Riccione','3 October 2026':'3. Oktober 2026'
+ }
+};
+
+/* long project texts: lead, body, quote and chapter texts (ch[i] = paragraphs of chapter i) */
+const TX={
+ it:{
+  nomore:{lead:'Un progetto di sensibilizzazione che si manifesta in una collezione di tre semplici oggetti: rappresentano il peso del malessere vissuto da una generazione alle prese con il mondo digitale, quando questo entra in contatto con il corpo umano.',
+   body:['Le dinamiche dei social media portano spesso alla dipendenza e all’isolamento; la superficialità dei rapporti chiude la porta all’umanità, e la bellezza diventa un obbligo da inseguire.','Ci sentiamo costretti a correre, eppure restiamo fermi, e ci perdiamo senza osservare davvero il mondo che ci circonda.'],
+   quote:'Il peso di un velo invisibile diventa un muro.',
+   ch:[['Il fashion film che ho diretto per il progetto, seguito dal backstage delle riprese.']]},
+  igs:{lead:'Le grafiche social per la seconda edizione dell’Italian Global Series Festival — il festival italiano dedicato alla serialità internazionale, a Rimini e Riccione dal 3 all’11 luglio 2026.',
+   body:['I key visual del festival trasformavano ogni genere televisivo in una surreale scena d’estate sulla Riviera. Il mio lavoro è stato la parte social: adattare quelle immagini in post e stories e progettare le vetrine del concorso, le proiezioni, gli annunci dei premi e le copertine quotidiane che hanno accompagnato l’intero festival.']},
+  unascena:{lead:'Matilde, una ragazza sui vent’anni, aspetta in macchina vestita da suora, una sigaretta tra le dita. Mic, sulla cinquantina, le si avvicina. Si guardano — si studiano, si misurano, stuzzicano vecchie ferite.',
+   body:['Nel cortometraggio di Andrea Vailati ho lavorato sia come aiuto regista sia come assistente alla direzione creativa.','Il loro viaggio comincia in una Milano nebbiosa, quasi sospesa: finestrini appannati, lunghe pause, momenti che sembrano presi in prestito da un altrove. Qualcosa li lega — forse un passato comune, forse solo un dolore simile.','Matilde. Il nome che lui avrebbe dato alla figlia mai arrivata nella sua vita. Lui ha scritto una scena; lei propone di darle vita. Quella che sembrava una conversazione sincera diventa una recita — un piccolo spettacolo, tenero e crudele allo stesso tempo.','<em>Era tutto solo un gioco? O il modo più vero per dirsi addio per la prima volta?</em>']},
+  numero10:{lead:'Campagna poster per Numero 10, spettacolo teatrale ispirato alla storia di Diego Armando Maradona, in scena dal 3 ottobre 2026 al Teatro Palapartenope di Napoli.',
+   body:['La campagna si è sviluppata in quattro versioni del poster, adattate a ogni formato — dalle stampe 100×140 e A3 al cartellone 6×3 m, fino a post e stories per i social.','Accanto a questa, una serie di cast reveal costruita sullo stesso immaginario: una figura che emerge dalle luci dello stadio prima che compaia il nome.']},
+  tiresia:{lead:'Che rapporto abbiamo con la femminilità? Spesso siamo spinti a identificarci in un genere preciso, senza mai ascoltare la voce che parla piano dentro di noi.',
+   body:['Il mondo esterno offusca la nostra percezione, limitando lo sguardo a ciò che lo specchio riflette, a una bellezza modellata e sancita dalla società. Il progetto prende il nome da Tiresia, la figura del mito che visse sia da uomo sia da donna — non come contraddizione, ma come visione.','Qui un uomo sogna la propria femminilità e si libera dalle catene che lo tengono fermo, diventando l’anima che ha sempre saputo di essere: oltre lo specchio, oltre le regole, oltre l’unico nome che gli è stato dato.'],
+   quote:'La verità può esistere in più forme nello stesso istante.'},
+  struttura:{lead:'La fotografia diventa uno spazio sospeso, più mentale che fisico. Il corpo è al centro del racconto — non un’identità definita ma una presenza: una superficie, una struttura, una forma emotiva.',
+   body:['L’immagine non vuole descrivere; esplora le relazioni tra gli elementi: luce, pelle, riflessi. I gesti sono ridotti all’essenziale, le pose restano trattenute e creano un quieto senso di atemporalità.','Composizioni pulite, un ritmo lento, un’attenzione accurata allo spazio negativo. Ogni immagine bilancia forze opposte: stabilità e tensione, controllo e abbandono.']},
+  zani:{lead:'ZANI è il mio progetto musicale da cantautore. Oltre a scrivere e interpretare i brani, ne curo la direzione creativa e la comunicazione visiva — artwork, shooting e film.',
+   body:['Ogni uscita è un mondo visivo a sé, con un brief, una palette e una storia: dal film dell’album Dentro le storie degli altri, sprazzi di me ai colori pop di Primavera, fino ai campi aperti di Distanti.'],
+   ch:[['Il film che accompagna l’album: ogni personaggio incarna uno dei suoi brani — Ballerina, California, Rondine, Stupide Ragioni, Alice, Due Passi Indietro, Universo.'],['Direzione artistica e musicale. Il brief: una fotografia a colori pop, dai toni accesi e saturi, e un filo rosso che attraversa ogni oggetto sul set — la maglietta, i fiori, il palloncino. Un filo che lega due persone; il rosso come passione.'],['Direzione creativa dell’artwork e dei visual di Distanti.']]},
+  ubox:{lead:'Identità dell’evento e merchandising per lo Student Village Tour 2026 di University Box, in tour tra Milano, Torino, Roma e Palermo.',
+   body:['Quattro aree — Guadagna, Lavora, Partecipa, Risparmia — ciascuna con il proprio colore e la propria icona, riunite in un unico sistema: maglie in stile calcistico, abbigliamento per gli sponsor, backdrop, totem, badge, poster e gadget stampati.']},
+  madri:{lead:'Madri è un documentario di Andrea Vailati, prodotto da ArteSettima: un viaggio attraverso le regioni italiane per incontrare le nonne nate negli anni Trenta — l’ultima memoria vivente del Novecento.',
+   body:['Su Madri ho lavorato come junior art director e aiuto regista.','Le pagine qui sotto sono tratte dalla presentazione del progetto.']},
+  santaliberta:{lead:'Due giovani alle prese con il concetto di libertà vigilata. La prigionia si trasforma da realtà fisica a condizione psicologica, non più legata a un luogo preciso.',
+   body:['La casa, un tempo simbolo di sicurezza e calore, diventa un purgatorio irriconoscibile. La luce di fuori assume un significato quasi sacro: i giovani protagonisti la cercano mentre inseguono una libertà che sembra quasi prendersi gioco di loro.']},
+  antonieyau:{lead:'Una serie di ritratti in bianco e nero, tra architettura e attitudine.'},
+  fnm:{lead:'“FNM sono le persone”. Una proposta per Ferrovie Nord Milano in due parti: un kit di merchandising per chi viaggia e una famiglia di brand ambassador che dà all’azienda una voce umana.',
+   body:['Tutto parte dal logo: le tre lettere — la sigla silenziosa di una lunga storia industriale — diventano persone, con le loro posture, i loro ritmi e i loro atteggiamenti. Da lì, prodotti e personaggi parlano la stessa lingua, con uno sguardo rivolto alle nuove generazioni.'],
+   ch:[['Un kit costruito su quattro parole chiave — sostenibile, pratico, accattivante, community — e pensato come un ponte tra generazioni: una tote bag in cotone riciclato con il logo-persone e frasi ironiche scritte a mano, un porta giacca, un porta tessera e un porta borraccia in quattro colori. Oggetti utili che vale anche la pena condividere — #vitainmovimento.'],
+    ['Gli ambassador di FNM sono le persone che, ogni giorno, danno forma all’azienda usando i suoi servizi. Ogni lettera del logo racchiude un diverso tipo di viaggiatore — La Sciura, Chip&Chop, Milo&Frank e La Family — ciascuno con una personalità, delle abitudini e una voce tutta sua.'],
+    ['Sui social gli ambassador diventano volti familiari che accompagnano le persone alla scoperta delle iniziative culturali di FNM — da Diabolik a Milano Cadorna a una mostra di radio storiche all’Università di Milano-Bicocca — con un tono più leggero e meno istituzionale.'],
+    ['I cantieri sono un tema delicato: deviazioni, rumore, ritardi, traffico. Qui gli ambassador diventano mediatori tra FNM e cittadini — prima come pattern grafico ripetuto che trasforma le recinzioni in street art, poi come brevi dialoghi a fumetti che raccontano cosa porteranno i lavori.']]},
+  mimappo:{lead:'Un piccolo magazine che racconta percorsi di crescita personale attraverso passioni o eventi specifici.',
+   body:['L’idea è associare le emozioni alle canzoni che hanno fatto da colonna sonora a quei momenti, raccogliendo tutto in quella che sembra la copertina di un vinile.']},
+  posters:{lead:'Una selezione di poster e artwork per musica, eventi e progetti personali.'}
+ },
+ fr:{
+  nomore:{lead:'Un projet de sensibilisation qui prend la forme d’une collection de trois objets simples : ils représentent le poids du mal-être vécu par une génération aux prises avec le monde numérique, lorsque celui-ci rencontre le corps humain.',
+   body:['Les dynamiques des réseaux sociaux mènent souvent à l’addiction et à l’isolement ; la superficialité des relations ferme la porte à l’humanité, et la beauté devient une obligation à poursuivre.','Nous nous sentons obligés de courir, et pourtant nous restons immobiles, à nous perdre sans vraiment observer le monde qui nous entoure.'],
+   quote:'Le poids d’un voile invisible devient un mur.',
+   ch:[['Le fashion film que j’ai réalisé pour le projet, suivi du making-of du tournage.']]},
+  igs:{lead:'Les visuels pour les réseaux sociaux de la deuxième édition de l’Italian Global Series Festival — le festival italien consacré aux séries internationales, à Rimini et Riccione du 3 au 11 juillet 2026.',
+   body:['Les key visuals du festival transformaient chaque genre télévisuel en une scène estivale surréaliste sur la Riviera. Mon travail portait sur la partie réseaux sociaux : adapter ces images en posts et en stories, et concevoir les vitrines de la compétition, les projections, les annonces des prix et les couvertures quotidiennes qui ont accompagné tout le festival.']},
+  unascena:{lead:'Matilde, une jeune femme d’une vingtaine d’années, attend dans la voiture, vêtue d’un habit de religieuse, une cigarette entre les doigts. Mic, la cinquantaine, s’approche d’elle. Ils se regardent — ils se testent, se jaugent, ravivent de vieilles blessures.',
+   body:['Sur le court métrage d’Andrea Vailati, j’ai travaillé à la fois comme assistant réalisateur et comme assistant à la direction créative.','Leur voyage commence dans un Milan brumeux, presque suspendu : vitres embuées, longues pauses, des instants qui semblent empruntés à un ailleurs. Quelque chose les lie — peut-être un passé commun, peut-être seulement une blessure semblable.','Matilde. Le prénom qu’il aurait donné à la fille qui n’est jamais arrivée dans sa vie. Il a écrit une scène ; elle lui propose de lui donner vie. Ce qui ressemblait à une vraie conversation devient une représentation — une petite pièce, tendre et cruelle à la fois.','<em>N’était-ce qu’un jeu ? Ou la façon la plus vraie de se dire adieu pour la première fois ?</em>']},
+  numero10:{lead:'Campagne d’affichage pour Numero 10, un spectacle inspiré de l’histoire de Diego Armando Maradona, au Teatro Palapartenope de Naples à partir du 3 octobre 2026.',
+   body:['La campagne s’est déclinée en quatre versions de l’affiche, adaptées à tous les formats — des tirages 100×140 et A3 au panneau de 6×3 m, jusqu’aux posts et aux stories.','En parallèle, une série de révélations du casting construite sur le même univers visuel : une silhouette qui émerge des projecteurs du stade avant que le nom n’apparaisse.']},
+  tiresia:{lead:'Quel rapport entretenons-nous avec la féminité ? On nous pousse souvent à nous identifier à un genre précis, sans jamais écouter la voix qui parle doucement en nous.',
+   body:['Le monde extérieur trouble notre perception et limite notre regard à ce que reflète le miroir, à une beauté façonnée et validée par la société. Le projet emprunte son titre à Tirésias, la figure mythique qui a vécu en homme et en femme — non comme une contradiction, mais comme une vision.','Ici, un homme rêve de sa propre féminité et se libère des chaînes qui le retiennent, devenant l’âme qu’il a toujours su être : au-delà du miroir, au-delà des règles, au-delà du seul nom qu’on lui a donné.'],
+   quote:'La vérité peut exister sous plusieurs formes à la fois.'},
+  struttura:{lead:'La photographie devient un espace suspendu, plus mental que physique. Le corps est au centre du récit — non pas une identité figée, mais une présence : une surface, une structure, une forme émotionnelle.',
+   body:['L’image ne cherche pas à décrire ; elle explore les relations entre les éléments : la lumière, la peau, les reflets. Les gestes sont réduits à l’essentiel, les poses restent retenues et créent une calme impression d’intemporalité.','Des compositions épurées, un rythme lent, une attention particulière à l’espace négatif. Chaque image équilibre des forces opposées : stabilité et tension, contrôle et lâcher-prise.']},
+  zani:{lead:'ZANI est mon projet musical d’auteur-compositeur-interprète. Au-delà de l’écriture et de la scène, j’en assure la direction créative et la communication visuelle — artworks, shootings et films.',
+   body:['Chaque sortie est pensée comme un univers visuel à part entière, avec un brief, une palette et une histoire : du film de l’album Dentro le storie degli altri, sprazzi di me aux couleurs pop de Primavera et aux champs ouverts de Distanti.'],
+   ch:[['Le film qui accompagne l’album : chaque personnage incarne l’une de ses chansons — Ballerina, California, Rondine, Stupide Ragioni, Alice, Due Passi Indietro, Universo.'],['Direction artistique et musicale. Le brief : une photographie aux couleurs pop, aux tons vifs et saturés, et un fil rouge qui traverse chaque objet du plateau — le t-shirt, les fleurs, le ballon. Un fil qui relie deux personnes ; le rouge comme passion.'],['Direction créative de l’artwork et des visuels de Distanti.']]},
+  ubox:{lead:'Identité événementielle et merchandising pour le Student Village Tour 2026 de University Box, en tournée à Milan, Turin, Rome et Palerme.',
+   body:['Quatre espaces — Guadagna, Lavora, Partecipa, Risparmia — chacun avec sa couleur et son icône, réunis dans un seul système : maillots façon football, vêtements pour les sponsors, fonds de scène, totems, badges, affiches et goodies imprimés.']},
+  madri:{lead:'Madri est un documentaire d’Andrea Vailati, produit par ArteSettima : un voyage à travers les régions d’Italie à la rencontre des grands-mères nées dans les années 1930 — la dernière mémoire vivante du XXe siècle.',
+   body:['Sur Madri, j’ai travaillé comme directeur artistique junior et assistant réalisateur.','Les pages ci-dessous sont extraites de la présentation du projet.']},
+  santaliberta:{lead:'Deux jeunes aux prises avec la notion de liberté conditionnelle. L’enfermement passe d’une réalité physique à un état psychologique, qui n’est plus lié à un lieu précis.',
+   body:['La maison, autrefois symbole de sécurité et de chaleur, devient un purgatoire méconnaissable. La lumière du dehors prend une valeur presque sacrée : les jeunes protagonistes la recherchent, en quête d’une liberté qui semble presque se moquer d’eux.']},
+  antonieyau:{lead:'Une série de portraits en noir et blanc, entre architecture et attitude.'},
+  fnm:{lead:'« FNM sono le persone » — FNM, ce sont les gens. Une proposition pour Ferrovie Nord Milano en deux volets : un kit de merchandising pour les voyageurs et une famille d’ambassadeurs de marque qui donne à l’entreprise une voix humaine.',
+   body:['Tout part du logo : les trois lettres — le sigle silencieux d’une longue histoire industrielle — deviennent des personnes, avec leurs postures, leurs rythmes et leurs attitudes. À partir de là, produits et personnages parlent le même langage, avec un regard tourné vers les nouvelles générations.'],
+   ch:[['Un kit construit autour de quatre mots-clés — durable, pratique, accrocheur, communauté — et pensé comme un pont entre les générations : un tote bag en coton recyclé avec le logo-personnages et des phrases ironiques écrites à la main, un porte-veste, un porte-cartes et un porte-gourde en quatre couleurs. Des objets utiles qui donnent aussi envie d’être partagés — #vitainmovimento.'],
+    ['Les ambassadeurs de FNM sont les personnes qui façonnent l’entreprise chaque jour en utilisant ses services. Chaque lettre du logo abrite un type de voyageur différent — La Sciura, Chip&Chop, Milo&Frank et La Family — chacun avec sa personnalité, ses habitudes et sa propre voix.'],
+    ['Sur les réseaux sociaux, les ambassadeurs deviennent des visages familiers qui font découvrir les initiatives culturelles de FNM — de Diabolik à Milano Cadorna à une exposition de radios historiques à l’université de Milan-Bicocca — sur un ton plus léger et moins institutionnel.'],
+    ['Les chantiers sont un sujet délicat : déviations, bruit, retards, circulation. Ici, les ambassadeurs deviennent des médiateurs entre FNM et les citoyens — d’abord comme un motif graphique répété qui transforme les palissades en street art, puis comme de courts dialogues en bande dessinée qui expliquent ce que les travaux vont apporter.']]},
+  mimappo:{lead:'Un petit magazine qui raconte des parcours d’évolution personnelle à travers des passions ou des événements précis.',
+   body:['L’idée est d’associer des émotions aux chansons qui ont été la bande-son de ces moments, en réunissant le tout dans ce qui ressemble à la pochette d’un vinyle.']},
+  posters:{lead:'Une sélection d’affiches et d’artworks pour la musique, des événements et des projets personnels.'}
+ },
+ es:{
+  nomore:{lead:'Un proyecto de concienciación que toma forma en una colección de tres objetos sencillos: representan el peso del malestar que vive una generación enfrentada al mundo digital, cuando este entra en contacto con el cuerpo humano.',
+   body:['Las dinámicas de las redes sociales suelen llevar a la adicción y al aislamiento; la superficialidad de las relaciones le cierra la puerta a la humanidad, y la belleza se convierte en una obligación que perseguir.','Nos sentimos obligados a correr y, sin embargo, seguimos quietos, perdiéndonos sin observar de verdad el mundo que nos rodea.'],
+   quote:'El peso de un velo invisible se convierte en un muro.',
+   ch:[['El fashion film que dirigí para el proyecto, seguido del making of del rodaje.']]},
+  igs:{lead:'Los gráficos para redes sociales de la segunda edición del Italian Global Series Festival — el festival italiano dedicado a las series internacionales, en Rimini y Riccione del 3 al 11 de julio de 2026.',
+   body:['Los key visuals del festival convertían cada género televisivo en una escena veraniega y surrealista en la Riviera. Mi trabajo fue la parte de redes sociales: adaptar esas imágenes a posts y stories, y diseñar los escaparates de la competición, las proyecciones, los anuncios de los premios y las portadas diarias que acompañaron todo el festival.']},
+  unascena:{lead:'Matilde, una chica de unos veinte años, espera en el coche vestida de monja, con un cigarrillo entre los dedos. Mic, de unos cincuenta, se le acerca. Se miran — se ponen a prueba, se miden, hurgan en viejas heridas.',
+   body:['En el cortometraje de Andrea Vailati trabajé como ayudante de dirección y como asistente de dirección creativa.','Su viaje empieza en un Milán brumoso, casi suspendido: cristales empañados, largas pausas, momentos que parecen tomados prestados de otro lugar. Algo los une — quizá un pasado común, quizá solo un dolor parecido.','Matilde. El nombre que él le habría puesto a la hija que nunca llegó a su vida. Él ha escrito una escena; ella le propone darle vida. Lo que parecía una conversación sincera se convierte en una actuación — una pequeña obra, tierna y cruel al mismo tiempo.','<em>¿Fue todo solo un juego? ¿O la forma más verdadera de despedirse por primera vez?</em>']},
+  numero10:{lead:'Campaña de carteles para Numero 10, un espectáculo teatral inspirado en la historia de Diego Armando Maradona, que se estrena en el Teatro Palapartenope de Nápoles el 3 de octubre de 2026.',
+   body:['La campaña se desarrolló en cuatro versiones del cartel, adaptadas a todos los formatos — desde impresiones de 100×140 y A3 hasta una valla de 6×3 m, posts y stories.','Junto a ella, una serie de presentación del reparto construida sobre el mismo universo visual: una figura que emerge de las luces del estadio antes de que aparezca el nombre.']},
+  tiresia:{lead:'¿Qué relación tenemos con la feminidad? A menudo se nos empuja a identificarnos con un género concreto, sin escuchar nunca la voz que habla en voz baja dentro de nosotros.',
+   body:['El mundo exterior nubla nuestra percepción y limita nuestra mirada a lo que refleja el espejo, a una belleza moldeada y sancionada por la sociedad. El proyecto toma su título de Tiresias, la figura mítica que vivió como hombre y como mujer — no como contradicción, sino como visión.','Aquí, un hombre sueña con su propia feminidad y se libera de las cadenas que lo mantienen inmóvil, convirtiéndose en el alma que siempre supo que era: más allá del espejo, más allá de las reglas, más allá del único nombre que le dieron.'],
+   quote:'La verdad puede existir en más de una forma a la vez.'},
+  struttura:{lead:'La fotografía se convierte en un espacio suspendido, más mental que físico. El cuerpo está en el centro del relato — no una identidad fija, sino una presencia: una superficie, una estructura, una forma emocional.',
+   body:['La imagen no pretende describir; explora las relaciones entre los elementos: la luz, la piel, los reflejos. Los gestos se reducen a lo esencial, las poses se mantienen contenidas y crean una serena sensación de atemporalidad.','Composiciones limpias, un ritmo lento, una atención cuidadosa al espacio negativo. Cada imagen equilibra fuerzas opuestas: estabilidad y tensión, control y abandono.']},
+  zani:{lead:'ZANI es mi proyecto musical como cantautor. Además de escribir e interpretar, me ocupo de su dirección creativa y de su comunicación visual — artworks, sesiones de fotos y películas.',
+   body:['Cada lanzamiento es un mundo visual propio, con un brief, una paleta y una historia: desde la película del álbum Dentro le storie degli altri, sprazzi di me hasta los colores pop de Primavera y los campos abiertos de Distanti.'],
+   ch:[['La película que acompaña al álbum: cada personaje encarna una de sus canciones — Ballerina, California, Rondine, Stupide Ragioni, Alice, Due Passi Indietro, Universo.'],['Dirección artística y musical. El brief: fotografía de color pop, con tonos vivos y saturados, y un hilo rojo que recorre cada objeto del set — la camiseta, las flores, el globo. Un hilo que une a dos personas; el rojo como pasión.'],['Dirección creativa del artwork y de los visuales de Distanti.']]},
+  ubox:{lead:'Identidad de evento y merchandising para el Student Village Tour 2026 de University Box, de gira por Milán, Turín, Roma y Palermo.',
+   body:['Cuatro áreas — Guadagna, Lavora, Partecipa, Risparmia — cada una con su propio color e icono, integradas en un único sistema: camisetas de estilo futbolero, ropa para patrocinadores, photocalls, tótems, acreditaciones, carteles y regalos impresos.']},
+  madri:{lead:'Madri es un documental de Andrea Vailati, producido por ArteSettima: un viaje por las regiones de Italia para conocer a las abuelas nacidas en los años treinta — la última memoria viva del siglo XX.',
+   body:['En Madri trabajé como director de arte junior y ayudante de dirección.','Las páginas siguientes proceden de la presentación del proyecto.']},
+  santaliberta:{lead:'Dos jóvenes enfrentados al concepto de libertad condicional. El encierro pasa de ser una realidad física a un estado psicológico, que ya no está ligado a un lugar concreto.',
+   body:['La casa, antes símbolo de seguridad y calidez, se convierte en un purgatorio irreconocible. La luz de fuera adquiere un significado casi sagrado: los jóvenes protagonistas la buscan mientras anhelan una libertad que parece casi burlarse de ellos.']},
+  antonieyau:{lead:'Una serie de retratos en blanco y negro, entre arquitectura y actitud.'},
+  fnm:{lead:'«FNM sono le persone» — FNM son las personas. Una propuesta para Ferrovie Nord Milano en dos partes: un kit de merchandising para los viajeros y una familia de embajadores de marca que da a la empresa una voz humana.',
+   body:['Todo parte del logotipo: las tres letras — la sigla silenciosa de una larga historia industrial — se convierten en personas, con sus posturas, sus ritmos y sus actitudes. A partir de ahí, productos y personajes hablan el mismo idioma, con la mirada puesta en las nuevas generaciones.'],
+   ch:[['Un kit construido sobre cuatro palabras clave — sostenible, práctico, llamativo, comunidad — y pensado como un puente entre generaciones: una tote bag de algodón reciclado con el logo de las personas y frases irónicas rotuladas a mano, un portachaquetas, un portatarjetas y un portabotellas en cuatro colores. Objetos útiles que además apetece compartir — #vitainmovimento.'],
+    ['Los embajadores de FNM son las personas que dan forma a la empresa cada día al usar sus servicios. Cada letra del logotipo alberga un tipo distinto de viajero — La Sciura, Chip&Chop, Milo&Frank y La Family — cada uno con su personalidad, sus costumbres y una voz propia.'],
+    ['En redes sociales, los embajadores se convierten en caras conocidas que acompañan al público por las iniciativas culturales de FNM — de Diabolik en Milano Cadorna a una exposición de radios históricas en la Universidad de Milán-Bicocca — con un tono más ligero y menos institucional.'],
+    ['Las obras son un tema delicado: desvíos, ruido, retrasos, tráfico. Aquí los embajadores se convierten en mediadores entre FNM y la ciudadanía — primero como un patrón gráfico repetido que convierte las vallas de obra en arte urbano, después como breves diálogos de cómic que cuentan lo que traerán los trabajos.']]},
+  mimappo:{lead:'Una pequeña revista que narra procesos de evolución personal a través de pasiones o acontecimientos concretos.',
+   body:['La idea es asociar emociones a las canciones que fueron la banda sonora de esos momentos, y reunirlo todo en lo que parece la portada de un vinilo.']},
+  posters:{lead:'Una selección de carteles y artworks para música, eventos y proyectos personales.'}
+ },
+ de:{
+  nomore:{lead:'Ein Projekt zur Sensibilisierung, das sich in einer Kollektion aus drei einfachen Objekten ausdrückt: Sie stehen für die Last des Unbehagens einer Generation, die mit der digitalen Welt ringt, sobald diese auf den menschlichen Körper trifft.',
+   body:['Die Dynamiken der sozialen Medien führen oft zu Abhängigkeit und Isolation; die Oberflächlichkeit der Beziehungen verschließt der Menschlichkeit die Tür, und Schönheit wird zu einer Pflicht, der man nachjagt.','Wir fühlen uns gezwungen zu rennen und bleiben doch stehen — wir verlieren uns, ohne die Welt um uns herum wirklich wahrzunehmen.'],
+   quote:'Das Gewicht eines unsichtbaren Schleiers wird zur Mauer.',
+   ch:[['Der Fashion Film, bei dem ich für das Projekt Regie geführt habe, gefolgt vom Backstage der Dreharbeiten.']]},
+  igs:{lead:'Social-Media-Grafiken für die zweite Ausgabe des Italian Global Series Festival — des italienischen Festivals für internationale Serien, vom 3. bis 11. Juli 2026 in Rimini und Riccione.',
+   body:['Die Key Visuals des Festivals verwandelten jedes Fernsehgenre in eine surreale Sommerszene an der Riviera. Meine Aufgabe war die Social-Media-Ebene: diese Bilder für Posts und Stories zu adaptieren und die Wettbewerbs-Showcases, Screenings, Preisankündigungen und täglichen Cover zu gestalten, die das ganze Festival begleitet haben.']},
+  unascena:{lead:'Matilde, eine junge Frau um die zwanzig, wartet im Auto, im Nonnengewand, eine Zigarette zwischen den Fingern. Mic, um die fünfzig, geht auf sie zu. Sie sehen sich an — sie testen sich, messen sich, rühren an alten Wunden.',
+   body:['Bei Andrea Vailatis Kurzfilm habe ich sowohl als Regieassistent als auch als Assistent der Creative Direction gearbeitet.','Ihre Reise beginnt in einem diesigen, fast schwebenden Mailand: beschlagene Scheiben, lange Pausen, Momente, die von anderswo geliehen scheinen. Etwas verbindet sie — vielleicht eine gemeinsame Vergangenheit, vielleicht nur ein ähnlicher Schmerz.','Matilde. Der Name, den er der Tochter gegeben hätte, die nie in sein Leben kam. Er hat eine Szene geschrieben; sie schlägt vor, sie zum Leben zu erwecken. Was wie ein echtes Gespräch wirkte, wird zur Aufführung — ein kleines Theaterstück, zärtlich und grausam zugleich.','<em>War alles nur ein Spiel? Oder die ehrlichste Art, sich zum ersten Mal zu verabschieden?</em>']},
+  numero10:{lead:'Plakatkampagne für Numero 10, ein Theaterstück nach der Geschichte von Diego Armando Maradona, das am 3. Oktober 2026 im Teatro Palapartenope in Neapel Premiere feiert.',
+   body:['Die Kampagne umfasste vier Plakatversionen, adaptiert für jedes Format — von 100×140- und A3-Drucken über eine 6×3-m-Großfläche bis zu Posts und Stories.','Dazu eine Cast-Reveal-Serie in derselben Bildwelt: eine Figur, die aus dem Flutlicht des Stadions auftaucht, bevor der Name erscheint.']},
+  tiresia:{lead:'Welche Beziehung haben wir zur Weiblichkeit? Oft werden wir gedrängt, uns mit einem bestimmten Geschlecht zu identifizieren, ohne je auf die Stimme zu hören, die leise in uns spricht.',
+   body:['Die Außenwelt trübt unsere Wahrnehmung und begrenzt unseren Blick auf das, was der Spiegel zeigt — auf eine Schönheit, die von der Gesellschaft geformt und abgesegnet ist. Das Projekt verdankt seinen Titel Teiresias, der mythischen Figur, die als Mann und als Frau gelebt hat — nicht als Widerspruch, sondern als Vision.','Hier träumt ein Mann von seiner eigenen Weiblichkeit, befreit sich von den Ketten, die ihn festhalten, und wird zu der Seele, die er schon immer zu sein wusste: jenseits des Spiegels, jenseits der Regeln, jenseits des einen Namens, den man ihm gegeben hat.'],
+   quote:'Wahrheit kann in mehr als einer Form zugleich existieren.'},
+  struttura:{lead:'Fotografie wird zu einem schwebenden Raum, eher mental als physisch. Der Körper steht im Zentrum der Erzählung — keine feste Identität, sondern eine Präsenz: eine Oberfläche, eine Struktur, eine emotionale Form.',
+   body:['Das Bild will nicht beschreiben; es erkundet die Beziehungen zwischen den Elementen: Licht, Haut, Reflexionen. Gesten werden auf das Wesentliche reduziert, die Posen bleiben zurückhaltend und erzeugen ein stilles Gefühl von Zeitlosigkeit.','Klare Kompositionen, ein langsamer Rhythmus, große Aufmerksamkeit für den Negativraum. Jedes Bild hält gegensätzliche Kräfte im Gleichgewicht: Stabilität und Spannung, Kontrolle und Loslassen.']},
+  zani:{lead:'ZANI ist mein Musikprojekt als Singer-Songwriter. Neben dem Schreiben und Performen verantworte ich die Creative Direction und die visuelle Kommunikation — Artworks, Shootings und Filme.',
+   body:['Jedes Release ist eine eigene visuelle Welt, mit einem Briefing, einer Palette und einer Geschichte: vom Albumfilm zu Dentro le storie degli altri, sprazzi di me über die Pop-Farben von Primavera bis zu den offenen Feldern von Distanti.'],
+   ch:[['Der Film zum Album: Jede Figur verkörpert einen seiner Songs — Ballerina, California, Rondine, Stupide Ragioni, Alice, Due Passi Indietro, Universo.'],['Künstlerische und musikalische Leitung. Das Briefing: Pop-Farbfotografie mit leuchtenden, satten Tönen und ein roter Faden, der sich durch jedes Objekt am Set zieht — das T-Shirt, die Blumen, der Ballon. Ein Faden, der zwei Menschen verbindet; Rot als Leidenschaft.'],['Creative Direction für Artwork und Visuals von Distanti.']]},
+  ubox:{lead:'Event-Identity und Merchandise für die University Box Student Village Tour 2026, mit Stationen in Mailand, Turin, Rom und Palermo.',
+   body:['Vier Bereiche — Guadagna, Lavora, Partecipa, Risparmia — jeder mit eigener Farbe und eigenem Icon, vereint in einem System: Trikots im Fußball-Stil, Sponsorenbekleidung, Backdrops, Totems, Badges, Plakate und bedruckte Giveaways.']},
+  madri:{lead:'Madri ist ein Dokumentarfilm von Andrea Vailati, produziert von ArteSettima: eine Reise durch die Regionen Italiens zu den Großmüttern, die in den 1930er-Jahren geboren wurden — das letzte lebendige Gedächtnis des 20. Jahrhunderts.',
+   body:['Bei Madri habe ich als Junior Art Director und Regieassistent gearbeitet.','Die folgenden Seiten stammen aus der Projektpräsentation.']},
+  santaliberta:{lead:'Zwei junge Menschen ringen mit dem Begriff der Bewährung. Gefangenschaft verwandelt sich von einer physischen Realität in einen psychischen Zustand, der an keinen bestimmten Ort mehr gebunden ist.',
+   body:['Das Zuhause, einst Symbol für Sicherheit und Wärme, wird zu einem unkenntlichen Fegefeuer. Das Licht draußen bekommt eine fast sakrale Bedeutung: Die jungen Protagonisten suchen es, während sie sich nach einer Freiheit sehnen, die sie fast zu verhöhnen scheint.']},
+  antonieyau:{lead:'Eine Schwarz-Weiß-Porträtserie zwischen Architektur und Haltung.'},
+  fnm:{lead:'„FNM sono le persone“ — FNM, das sind die Menschen. Ein Vorschlag für Ferrovie Nord Milano in zwei Teilen: ein Merchandising-Kit für Reisende und eine Familie von Brand Ambassadors, die dem Unternehmen eine menschliche Stimme gibt.',
+   body:['Alles beginnt beim Logo: Die drei Buchstaben — das stille Kürzel einer langen Industriegeschichte — werden zu Menschen, mit eigenen Haltungen, Rhythmen und Eigenarten. Von dort aus sprechen Produkte und Figuren dieselbe Sprache, mit Blick auf die neuen Generationen.'],
+   ch:[['Ein Kit, das auf vier Schlüsselbegriffen aufbaut — nachhaltig, praktisch, eingängig, Community — und als Brücke zwischen den Generationen gedacht ist: eine Tote Bag aus recycelter Baumwolle mit dem Menschen-Logo und handgeschriebenen, ironischen Sprüchen, ein Jackenhalter, ein Kartenhalter und ein Flaschenhalter in vier Farben. Nützliche Dinge, die man auch gern teilt — #vitainmovimento.'],
+    ['Die Brand Ambassadors von FNM sind die Menschen, die das Unternehmen jeden Tag prägen, indem sie seine Angebote nutzen. Jeder Buchstabe des Logos steht für einen anderen Typ Reisenden — La Sciura, Chip&Chop, Milo&Frank und La Family — jeder mit eigener Persönlichkeit, eigenen Gewohnheiten und eigener Stimme.'],
+    ['In den sozialen Medien werden die Ambassadors zu vertrauten Gesichtern, die durch die Kulturinitiativen von FNM führen — von Diabolik in Milano Cadorna bis zu einer Ausstellung historischer Radios an der Universität Mailand-Bicocca — in einem leichteren, weniger institutionellen Ton.'],
+    ['Baustellen sind ein heikles Thema: Umleitungen, Lärm, Verspätungen, Verkehr. Hier werden die Ambassadors zu Vermittlern zwischen FNM und den Bürgern — zuerst als wiederholtes grafisches Muster, das die Bauzäune in Street Art verwandelt, dann als kurze Comic-Dialoge, die erzählen, was die Arbeiten bringen werden.']]},
+  mimappo:{lead:'Ein kleines Magazin, das persönliche Entwicklungsprozesse anhand von Leidenschaften oder bestimmten Ereignissen erzählt.',
+   body:['Die Idee: Emotionen mit den Songs zu verbinden, die der Soundtrack dieser Momente waren, und alles in etwas zu fassen, das wie das Cover einer Schallplatte aussieht.']},
+  posters:{lead:'Eine Auswahl an Plakaten und Artworks für Musik, Events und freie Projekte.'}
+ }
+};
+
+/* French typography: non-breaking space before : ; ? ! » and after « */
+(function(){const fx=s=>s.replace(/ ([:;?!»])/g,' $1').replace(/« /g,'« ');const walk=o=>{for(const k in o){const v=o[k];if(typeof v==='string')o[k]=fx(v);else if(v&&typeof v==='object')walk(v)}};[UI.fr,PH.fr,DL.fr,TX.fr].forEach(walk)})();
+
+/* ---------- i18n runtime ---------- */
+let LANG=LANGS.includes(root.getAttribute('lang'))?root.getAttribute('lang'):'en';
+const I18N=[...document.querySelectorAll('[data-tr]')].map(el=>({el,k:el.dataset.tr,en:el.innerHTML}));
+const I18NA=[...document.querySelectorAll('[data-tra]')].flatMap(el=>el.dataset.tra.split(',').map(s=>{const [a,k]=s.split(':');return {el,a,k,en:el.getAttribute(a)||''}}));
+const ENS={};I18N.forEach(o=>ENS[o.k]=o.en);I18NA.forEach(o=>ENS[o.k]=o.en);
+const T=k=>{const d=UI[LANG];return d&&d[k]!=null?d[k]:UI.en[k]!=null?UI.en[k]:ENS[k]!=null?ENS[k]:k};
+const Tp=s=>{if(!s||LANG==='en')return s;const d=PH[LANG];return d&&d[s]!=null?d[s]:s};
+const Td=k=>(LANG!=='en'&&DL[LANG]&&DL[LANG][k])||DISC[k];
+const TXp=p=>LANG!=='en'&&TX[LANG]?TX[LANG][p.id]:null;
+const Tx=(p,f)=>{const x=TXp(p);return x&&x[f]!=null?x[f]:p[f]};
+const metaD=document.querySelector('meta[name=description]'),EN_T=document.title,EN_D=metaD?metaD.content:'';
+function applyStatic(){
+  const d=LANG==='en'?null:UI[LANG],g=k=>d&&d[k]!=null?d[k]:null;
+  I18N.forEach(o=>{const v=g(o.k);o.el.innerHTML=v!=null?v:o.en});
+  I18NA.forEach(o=>{const v=g(o.k);o.el.setAttribute(o.a,v!=null?v:o.en)});
+  document.title=g('title')||EN_T;if(metaD)metaD.content=g('desc')||EN_D;
+  root.setAttribute('lang',LANG);
+}
+if(LANG!=='en')applyStatic();
+
+/* ---------- helpers ---------- */
+function meta(k){return IMG[k]||{a:1,s:1000,l:2400}}
+function src(id,n){return `img/${id}/${n}`}
+const sm=(id,n)=>`img/${id}/${n}-s.webp`;
+function imgTag(id,n,o={}){
+  const k=`${id}/${n}`,m=meta(k),b=src(id,n);
+  const sizes=o.sizes||'(max-width:900px) 100vw, 50vw';
+  return `<img src="${b}-s.webp" srcset="${b}-s.webp ${m.s}w, ${b}.webp ${m.l}w" sizes="${sizes}" alt="${o.alt||''}" ${o.eager?'':'loading="lazy"'} decoding="async"${o.cls?` class="${o.cls}"`:''}>`;
+}
+const thumb=p=>p.card||p.cover;
+const theme=()=>root.getAttribute('data-theme')==='light'?'l':'d';
+const counts=k=>IDX.filter(p=>p.d.includes(k)).length;
+
+function splitWords(el){
+  const walk=node=>{[...node.childNodes].forEach(n=>{
+    if(n.nodeType===3){const f=document.createDocumentFragment();n.textContent.split(/(\s+)/).forEach(p=>{if(!p)return;if(/^\s+$/.test(p)){f.appendChild(document.createTextNode(p));return}const w=document.createElement('span');w.className='w';const s=document.createElement('span');s.textContent=p;w.appendChild(s);f.appendChild(w)});n.replaceWith(f)}
+    else if(n.nodeType===1&&n.tagName!=='BR'&&n.tagName!=='SUP')walk(n)})};
+  walk(el);el.querySelectorAll('.w>span').forEach((s,i)=>s.style.transitionDelay=(i*.045)+'s');
+}
+document.querySelectorAll('.split').forEach(splitWords);
+
+/* shutter: duplicate the content into an inverted layer */
+function addInv(el){const v=document.createElement('span');v.className='inv';v.setAttribute('aria-hidden','true');[...el.childNodes].forEach(n=>v.appendChild(n.cloneNode(true)));el.appendChild(v)}
+
+/* reveal observer */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1,rootMargin:'0px 0px -6% 0px'});
+
+/* palette tint (index rows) */
+let untintT,tinted=null;
+function tint(p){if(!fine||!p)return;clearTimeout(untintT);if(tinted===p.id)return;tinted=p.id;const c=p.pal[theme()];root.style.setProperty('--bg',`color-mix(in srgb, ${c[2]} ${theme()==='d'?16:12}%, ${c[0]})`);root.style.setProperty('--fg',c[1])}
+function untint(now){clearTimeout(untintT);const f=()=>{tinted=null;root.style.removeProperty('--bg');root.style.removeProperty('--fg')};now?f():untintT=setTimeout(f,140)}
+
+/* ---------- hero: wordmark ---------- */
+const hero=document.querySelector('.hero'),wm=document.getElementById('wm'),wmi=document.getElementById('wmi');
+document.querySelectorAll('[data-chars]').forEach(el=>{const t=el.textContent;el.textContent='';[...t].forEach(c=>{const s=document.createElement('span');s.className='ch';s.textContent=c===' '?'\u00a0':c;el.appendChild(s)})});
+document.querySelectorAll('.wm .ch').forEach((c,i)=>c.style.transitionDelay=(.1+i*.042)+'s');
+const ghosts=[0,1].map(()=>{const g=document.createElement('span');g.className='gh';g.setAttribute('aria-hidden','true');g.innerHTML='<span class="wl">Marco S.</span> <span class="wl">Zanini</span>';wmi.appendChild(g);return g});
+function fitWM(){wm.style.fontSize='100px';const w=wmi.offsetWidth,a=wm.clientWidth;if(w&&a)wm.style.fontSize=(100*a/w*.997).toFixed(2)+'px'}
+fitWM();
+
+/* ---------- hero: twisted ribbon of image slices ---------- */
+const ribEl=document.getElementById('ribbon');
+const RIMG=P.filter(p=>p.trail).map(p=>({id:p.id,k:p.trail}));
+const RB={sl:[],N:0,K:4,w:60,h:174,W:1,H:1,mob:false,s:0,ph:.6,rev:reduce?1:0,vis:true,mx:0,my:0,tmx:0,tmy:0,spd:0};
+function ribBuild(){
+  RB.mob=innerWidth<760;const G=RB.mob?8:12,K=4;RB.K=K;RB.N=G*K;
+  ribEl.innerHTML='';RB.sl=[];
+  for(let r=0;r<2;r++)for(let i=0;i<RB.N;i++){const im=RIMG[(Math.floor(i/K)+(r?Math.ceil(RIMG.length/2):0))%RIMG.length],d=document.createElement('i');d.className='rs';d.style.backgroundImage=`url(${sm(im.id,im.k)})`;ribEl.appendChild(d);RB.sl.push({el:d,i,k:i%K,im,m:r?-1:1,z:-1,f:-1})}
+  ribLayout();
+}
+function ribLayout(){
+  const W=ribEl.clientWidth||innerWidth,H=ribEl.clientHeight||innerHeight;
+  const w=Math.round(RB.mob?clamp(W*.125,36,66):clamp(W*.046,44,92)),h=Math.round(w*2.9);
+  Object.assign(RB,{W,H,w,h});
+  ribEl.style.setProperty('--w',w+'px');ribEl.style.setProperty('--h',h+'px');
+  const VW=w*RB.K;
+  RB.sl.forEach(s=>{const a=meta(`${s.im.id}/${s.im.k}`).a,dw=Math.max(VW,h*a),dh=dw/a,ox=(VW-dw)/2,oy=(h-dh)/2;s.el.style.backgroundSize=`${dw.toFixed(1)}px ${dh.toFixed(1)}px`;s.el.style.backgroundPosition=`${(ox-s.k*w).toFixed(1)}px ${oy.toFixed(1)}px`});
+}
+/* two strands, one the vertical mirror of the other (m=1 / m=-1): they cross right of centre, like an X chromosome */
+function ribPath(u,m){const W=RB.W,H=RB.H;return RB.mob?[W*(-.22+1.44*u),H*(.38+m*(.17+.4*u+.05*Math.sin(6.4*u)-.38)),m*50*Math.sin(5*u)]:[W*(-.09+1.19*u),H*(.49+m*(.19+.55*u+.06*Math.sin(6.9*u)-.49)),m*90*Math.sin(5.2*u+.4)]}
+function ribFrame(dt,sy){
+  const N=RB.N,H=RB.H;
+  RB.mx+=(RB.tmx-RB.mx)*.05;RB.my+=(RB.tmy-RB.my)*.05;
+  const q=clamp(sy/H,0,1);
+  if(!reduce){RB.s=(RB.s+dt*(.7+RB.spd))%N;RB.ph+=dt*(.42+q*1.4+RB.spd*.5);RB.spd*=.95;if(RB.rev<1&&hero.classList.contains('go'))RB.rev=Math.min(1,RB.rev+dt/1.8)}
+  const spread=1+q*.45,lift=-q*H*.25,mx=RB.mx,my=RB.my;
+  for(const s of RB.sl){
+    const p=(s.i+RB.s)%N,u=p/(N-1),uu=.5+(u-.5)*spread;
+    const [x,y,z]=ribPath(uu,s.m),[x2,y2]=ribPath(uu+.004,s.m);
+    const tilt=Math.atan2(y2-y,x2-x)*.3;
+    const th=s.m*(RB.ph+u*Math.PI*2.1+.45*Math.sin(u*4.2+RB.ph*.5)),c=Math.cos(th);
+    let sc=clamp((RB.rev*1.45-u)/.45,0,1);sc=1-Math.pow(1-sc,3);
+    s.el.style.transform=`translate3d(${(x+mx*26).toFixed(1)}px,${(y+lift+my*20).toFixed(1)}px,${z.toFixed(1)}px) rotate(${tilt.toFixed(3)}rad) rotateX(${(-my*9).toFixed(2)}deg) rotateY(${th.toFixed(3)}rad)${c<0?' scaleX(-1)':''} scale(${sc.toFixed(3)})`;
+    const f=Math.round((.6+.4*Math.abs(c))*40)/40;if(f!==s.f){s.el.style.filter=`brightness(${f})`;s.f=f}
+    const zi=Math.floor(p)+(s.m<0?N:0);if(zi!==s.z){s.el.style.zIndex=zi;s.z=zi}
+  }
+}
+ribBuild();
+if(reduce)ribFrame(0,0);
+let lhx=0,lhy=0;
+hero.addEventListener('mousemove',e=>{const r=hero.getBoundingClientRect();RB.tmx=((e.clientX-r.left)/r.width-.5)*2;RB.tmy=((e.clientY-r.top)/r.height-.5)*2;const d=Math.hypot(e.clientX-lhx,e.clientY-lhy);lhx=e.clientX;lhy=e.clientY;if(d<300)RB.spd=Math.min(2.2,RB.spd+d*.004)});
+hero.addEventListener('mouseleave',()=>{RB.tmx=0;RB.tmy=0});
+
+/* ---------- loader (first visit of the session only) ---------- */
+const loader=document.getElementById('loader');
+(function(){
+  let seen=false;try{seen=sessionStorage.getItem('mz-seen')==='1';sessionStorage.setItem('mz-seen','1')}catch(e){}
+  const deep=P.some(p=>'#'+p.id===location.hash);
+  if(seen||reduce||deep){loader.remove();hero.classList.add('go');return}
+  document.body.classList.add('locked');
+  const pills=document.getElementById('pills');pills.innerHTML=RIMG.slice(0,9).map(im=>`<i style="background-image:url(${sm(im.id,im.k)})"></i>`).join('');
+  const pi=[...pills.children],cnt=document.getElementById('cnt'),bar=document.getElementById('bar'),t0=performance.now(),dur=1600;
+  (function tick(t){const p=Math.min(1,(t-t0)/dur),e=1-Math.pow(1-p,3),v=Math.round(e*100);cnt.textContent=String(v).padStart(3,'0');bar.style.width=v+'%';pi.forEach((el,j)=>el.classList.toggle('on',e>j/pi.length));
+    if(p<1)requestAnimationFrame(tick);else setTimeout(()=>{loader.classList.add('out');document.body.classList.remove('locked');hero.classList.add('go');setTimeout(()=>loader.remove(),1200)},220)})(t0);
+})();
+
+/* hero slot + avatars */
+(function(){const ul=document.getElementById('slot'),n=ul.children.length-1;let i=0;setInterval(()=>{if(reduce)return;i++;ul.style.transition='transform .8s cubic-bezier(.16,1,.3,1)';ul.style.transform=`translateY(${-i*1.6}em)`;if(i===n)setTimeout(()=>{ul.style.transition='none';ul.style.transform='translateY(0)';i=0},850)},2000)})();
+
+/* ---------- floating preview ---------- */
+const float=document.getElementById('float'),fi=document.getElementById('fi');
+let fcyc=null;
+function fpush(s){const last=fi.lastElementChild;if(last&&last.dataset.s===s)return;const im=new Image();im.alt='';im.src=s;im.dataset.s=s;fi.appendChild(im);if(!reduce)im.animate([{clipPath:'inset(100% 0 0 0)',transform:'scale(1.18)'},{clipPath:'inset(0 0 0 0)',transform:'scale(1)'}],{duration:560,easing:'cubic-bezier(.16,1,.3,1)'});while(fi.children.length>3)fi.firstElementChild.remove()}
+function fshow(side){float.classList.add('on');float.classList.toggle('side',!!side)}
+function fhide(){float.classList.remove('on');clearInterval(fcyc);fcyc=null}
+
+/* ---------- disciplines ---------- */
+const dlist=document.getElementById('dlist');
+function renderDisc(){
+  dlist.innerHTML=Object.keys(DISC).map((k,i)=>{const v=Td(k);return `<li class="rv"><button class="drow sh" data-f="${k}" data-c="link"><span class="dn">${pad(i+1)}</span><span class="dt">${v.row}</span><span class="dd">${v.dd}<b>${pad(counts(k))} ${T('projects')} →</b></span></button></li>`}).join('');
+  dlist.querySelectorAll('.drow').forEach(b=>{
+    addInv(b);
+    const list=IDX.filter(p=>p.d.includes(b.dataset.f)).map(p=>sm(p.id,thumb(p)));
+    b.addEventListener('pointerenter',()=>{if(!fine)return;list.forEach(s=>{const i=new Image();i.src=s});clearInterval(fcyc);let j=0;fpush(list[0]);fshow(true);fcyc=setInterval(()=>{j=(j+1)%list.length;fpush(list[j])},720)});
+    b.addEventListener('pointerleave',fhide);
+    b.addEventListener('click',()=>{fhide();setFilter(b.dataset.f);document.querySelector('.views [data-view=list]').click();document.getElementById('index').scrollIntoView({behavior:reduce?'auto':'smooth'})});
+  });
+  dlist.querySelectorAll('.rv').forEach(el=>io.observe(el));
+  fitDisc();
+}
+/* keep every discipline row inside the viewport whatever the language: pull long rows left, then shrink the type if needed */
+function fitDisc(){
+  const cs=getComputedStyle(dlist),room=dlist.clientWidth-parseFloat(cs.paddingLeft)-parseFloat(cs.paddingRight),mob=innerWidth<=900;
+  dlist.querySelectorAll('li').forEach(li=>{
+    const b=li.querySelector('.drow'),dts=b.querySelectorAll('.dt');
+    li.style.marginLeft='';dts.forEach(d=>d.style.fontSize='');
+    const fs=parseFloat(getComputedStyle(dts[0]).fontSize),dw=dts[0].scrollWidth;
+    if(mob){const bs=getComputedStyle(b),inner=b.clientWidth-parseFloat(bs.paddingLeft)-parseFloat(bs.paddingRight)-30;if(dw>inner)dts.forEach(d=>d.style.fontSize=(fs*inner/dw).toFixed(2)+'px');return}
+    const m=parseFloat(getComputedStyle(li).marginLeft)||0,need=b.scrollWidth;
+    if(need+m>room){li.style.marginLeft=Math.max(0,room-need)+'px';
+      if(need>room){const k=Math.max(.5,(dw-(need-room)-2)/dw);dts.forEach(d=>d.style.fontSize=(fs*k).toFixed(2)+'px')}}
+  });
+}
+renderDisc();
+
+/* ---------- selected work: 3D prism ---------- */
+const work=document.getElementById('work'),ring3d=document.getElementById('ring3d'),wtitle=document.getElementById('wtitle');
+const WR={n:FEAT.length,a:0,front:-1,vis:false,R:300,tx:0,ty:0,ttx:0,tty:0,stat:reduce};
+document.getElementById('wtot').textContent=pad(WR.n);work.style.setProperty('--n',WR.n);
+ring3d.innerHTML=FEAT.map((p,i)=>`<a class="rcard" href="#${p.id}" data-i="${i}" data-c="view" data-ct="${T('cOpen')}" tabindex="-1" aria-label="${p.tp}">${imgTag(p.id,thumb(p),{alt:'',sizes:'(max-width:900px) 52vw, 24vw'})}<span class="rn">${pad(i+1)}</span></a>`).join('');
+const rcards=[...ring3d.children];
+const ticksEl=document.getElementById('ticks');
+ticksEl.innerHTML=FEAT.map((p,i)=>`<button data-i="${i}" aria-label="${p.tp}" data-c="link"></button>`).join('');
+const ticks=[...ticksEl.children];
+const wgrid=document.getElementById('wgrid');
+function renderWGrid(){wgrid.innerHTML=FEAT.map(p=>`<a href="#${p.id}" data-c="view" data-ct="${T('cOpen')}"><div class="m">${imgTag(p.id,thumb(p),{alt:p.tp,sizes:'(max-width:900px) 50vw, 33vw'})}</div><h3>${p.t}</h3><p class="label">${p.d.map(k=>Td(k).plain).join(' · ')} — ${p.year}</p></a>`).join('')}
+renderWGrid();
+if(WR.stat)work.classList.add('static');
+function ringLayout(){WR.R=ring3d.offsetWidth*.93;rcards.forEach((c,i)=>c.style.transform=`rotateY(${(i*360/WR.n).toFixed(2)}deg) translateZ(${WR.R.toFixed(1)}px)`)}
+function paintWork(){const p=FEAT[WR.front];if(!p)return;const c=p.pal[theme()==='l'?'d':'l'];work.style.setProperty('--bg',c[0]);work.style.setProperty('--fg',c[1]);work.style.setProperty('--red',c[2])}
+function echoSwap(el,html,dir){
+  const old=el.querySelector('.now');
+  const n=document.createElement('span');n.className='now';n.innerHTML=html;el.appendChild(n);
+  if(!dir||reduce){if(old)old.remove();return}
+  if(old){old.className='old';old.animate([{transform:'none',opacity:1},{transform:`translateY(${-dir*42}%)`,opacity:0}],{duration:520,easing:'cubic-bezier(.7,0,.2,1)',fill:'forwards'}).onfinish=()=>old.remove()}
+  n.animate([{transform:`translateY(${dir*70}%)`,opacity:0},{transform:'none',opacity:1}],{duration:950,easing:'cubic-bezier(.16,1,.3,1)'});
+  [0,1].forEach(k=>{const g=document.createElement('span');g.className='gh';g.setAttribute('aria-hidden','true');g.innerHTML=html;el.appendChild(g);
+    g.animate([{transform:`translateY(${dir*(95+k*50)}%)`,opacity:0},{opacity:k?.25:.45,offset:.35},{transform:`translateY(${dir*(-6-k*6)}%)`,opacity:0}],{duration:1050+k*200,easing:'cubic-bezier(.16,1,.3,1)',fill:'forwards'}).onfinish=()=>g.remove()});
+}
+function workText(){
+  const p=FEAT[WR.front];if(!p)return;
+  document.getElementById('wmeta').textContent=`${p.d.map(k=>Td(k).plain).join(' · ')} — ${p.year}`;
+  document.getElementById('wrole').innerHTML=`${Tp(p.client)}<span>${Tp(p.role)}</span>`;
+  rcards.forEach((c,i)=>c.dataset.ct=i===WR.front?T('cOpen'):T('cRotate'));
+}
+function setFront(f){
+  const dir=WR.front<0?0:(f>WR.front?1:-1);WR.front=f;const p=FEAT[f];
+  document.getElementById('wcnt').textContent=pad(f+1);
+  document.getElementById('wopen').href='#'+p.id;
+  rcards.forEach((c,i)=>{c.classList.toggle('on',i===f);c.tabIndex=i===f?0:-1});
+  ticks.forEach((b,i)=>b.classList.toggle('on',i===f));
+  workText();
+  echoSwap(wtitle,p.t,dir);
+  paintWork();
+}
+function wprog(r){const len=r.height-innerHeight;return clamp(-r.top/len,0,1)}
+function ringFrame(r){
+  const pr=wprog(r),ta=-pr*(WR.n-1)*360/WR.n;
+  WR.a+=(ta-WR.a)*.11;WR.tx+=(WR.ttx-WR.tx)*.06;WR.ty+=(WR.tty-WR.ty)*.06;
+  ring3d.style.transform=`translateZ(${(-WR.R).toFixed(1)}px) rotateX(${(WR.ty*-7).toFixed(2)}deg) rotateY(${(WR.a+WR.tx*10).toFixed(2)}deg)`;
+  const f=Math.round(pr*(WR.n-1));if(f!==WR.front)setFront(f);
+}
+function scrollToCard(i){const st=work.getBoundingClientRect().top+scrollY,len=work.offsetHeight-innerHeight;scrollTo({top:st+len*i/(WR.n-1)+1,behavior:reduce?'auto':'smooth'})}
+ring3d.addEventListener('click',e=>{const a=e.target.closest('.rcard');if(!a)return;const i=+a.dataset.i;if(i!==WR.front){e.preventDefault();scrollToCard(i)}});
+ticksEl.addEventListener('click',e=>{const b=e.target.closest('button');if(b)scrollToCard(+b.dataset.i)});
+work.addEventListener('mousemove',e=>{WR.ttx=e.clientX/innerWidth-.5;WR.tty=e.clientY/innerHeight-.5});
+ringLayout();setFront(0);
+if(!WR.stat)ring3d.style.transform=`translateZ(${(-WR.R).toFixed(1)}px)`;
+
+/* ---------- index ---------- */
+const ilist=document.getElementById('ilist'),igrid=document.getElementById('igrid'),filters=document.getElementById('filters');
+let curF='all';
+function bindRow(el,p,inList){
+  el.addEventListener('pointermove',()=>tint(p));
+  el.addEventListener('pointerleave',()=>{untint();if(inList)fhide()});
+  if(inList)el.addEventListener('pointerenter',()=>{if(!fine)return;clearInterval(fcyc);fpush(sm(p.id,thumb(p)));fshow(false)});
+}
+igrid.innerHTML=IDX.map(p=>`<a class="icard" href="#${p.id}" data-id="${p.id}" data-d="${p.d.join(' ')}" data-c="view" data-ct="${T('cOpen')}"><div class="m">${imgTag(p.id,thumb(p),{alt:p.tp,sizes:'(max-width:900px) 50vw, 25vw'})}</div><div class="mt"><h4>${p.t}</h4><span class="label">${p.year}</span></div></a>`).join('');
+igrid.querySelectorAll('.icard').forEach(a=>bindRow(a,P.find(x=>x.id===a.dataset.id),false));
+function renderIndex(){
+  ilist.innerHTML=IDX.map((p,i)=>`<li data-d="${p.d.join(' ')}" class="rv"><a class="sh" href="#${p.id}" data-id="${p.id}" data-c="view" data-ct="${T('cOpen')}"><span class="n">${pad(i+1)}</span><span class="t">${p.t}</span><span class="c">${Tp(p.client)}</span><span class="d">${p.d.map(k=>Td(k).plain).join(' · ')}</span><span class="y">${p.year}</span></a></li>`).join('');
+  ilist.querySelectorAll('a').forEach(a=>{addInv(a);bindRow(a,P.find(x=>x.id===a.dataset.id),true)});
+  ilist.querySelectorAll('.rv').forEach(el=>io.observe(el));
+  igrid.querySelectorAll('.icard').forEach(a=>a.dataset.ct=T('cOpen'));
+  filters.innerHTML=`<button class="chip" data-f="all" data-c="link">${T('all')}<sup>${pad(IDX.length)}</sup></button>`+Object.keys(DISC).map(k=>`<button class="chip" data-f="${k}" data-c="link">${Td(k).plain}<sup>${pad(counts(k))}</sup></button>`).join('');
+  setFilter(curF,true);
+}
+document.getElementById('icount').textContent=IDX.length;
+filters.addEventListener('click',e=>{const b=e.target.closest('button');if(b)setFilter(b.dataset.f)});
+function setFilter(f,instant){
+  curF=f;
+  filters.querySelectorAll('.chip').forEach(b=>b.classList.toggle('on',b.dataset.f===f));
+  let i=0;
+  [...ilist.children,...igrid.children].forEach(el=>{const show=f==='all'||el.dataset.d.split(' ').includes(f);el.classList.toggle('hide',!show);
+    if(show&&!instant&&!reduce&&el.offsetParent){el.animate([{opacity:0,transform:'translateY(18px)'},{opacity:1,transform:'none'}],{duration:700,delay:(i++)*35,easing:'cubic-bezier(.16,1,.3,1)',fill:'backwards'})}});
+}
+renderIndex();
+document.querySelectorAll('.views button').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.views button').forEach(x=>x.classList.toggle('on',x===b));document.getElementById('index').classList.toggle('grid-view',b.dataset.view==='grid');try{localStorage.setItem('mz-view',b.dataset.view)}catch(e){}}));
+try{if(localStorage.getItem('mz-view')==='grid')document.querySelector('.views [data-view=grid]').click()}catch(e){}
+
+/* marquees */
+const mq1=document.getElementById('mq1'),mq2=document.getElementById('mq2');
+function renderMq(){mq1.innerHTML=(`<span>${T('mqA')}<i></i></span><span>${T('mqB')}<i></i></span>`).repeat(4);mq2.innerHTML=(`<span>${T('mqC')}<i></i></span><span>zaninimarco01@gmail.com<i></i></span>`).repeat(4)}
+renderMq();
+const mqs=[mq1,mq2].map(el=>({el,x:0,w:el.scrollWidth/2}));
+
+/* reveal + visibility observers */
+document.querySelectorAll('.rv,.split,.clip').forEach(el=>io.observe(el));
+const vio=new IntersectionObserver(es=>es.forEach(e=>{if(e.target===hero)RB.vis=e.isIntersecting;else WR.vis=e.isIntersecting}),{rootMargin:'120px 0px'});
+vio.observe(hero);vio.observe(work);
+
+/* scramble on hover (mono labels) */
+const GLY='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#+*/=';
+function scramble(el){if(reduce||el._s)return;const txt=el.dataset.txt||(el.dataset.txt=el.textContent);el._s=1;const g=el._g=(el._g||0)+1;let f=0;const tot=txt.length*1.6+10;(function step(){if(el._g!==g)return;let o='';for(let i=0;i<txt.length;i++){const c=txt[i];o+=(c===' '||i*1.6<f-8)?c:GLY[Math.random()*GLY.length|0]}el.textContent=o;if(++f<tot)requestAnimationFrame(step);else{el.textContent=txt;el._s=0}})()}
+document.querySelectorAll('[data-scr]').forEach(el=>{const host=el.closest('a,button')||el;host.addEventListener('mouseenter',()=>scramble(el))});
+
+/* cursor */
+const cur=document.getElementById('cur'),cring=document.getElementById('cring'),cringtxt=document.getElementById('cringtxt');
+let mx=innerWidth/2,my=innerHeight/2,rx=mx,ry=my,fx=mx,fy=my;
+if(fine)document.body.classList.add('has-cursor');
+addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cur.style.transform=`translate(${mx}px,${my}px)`});
+document.addEventListener('mouseover',e=>{const c=e.target.closest('[data-c]');cring.classList.remove('big','link');if(!c)return;if(c.dataset.c==='view'){cring.classList.add('big');cringtxt.textContent=c.dataset.ct||T('cView')}else cring.classList.add('link')});
+
+/* ---------- main loop ---------- */
+const nav=document.getElementById('nav');
+let lastS=scrollY,vel=0,ev=0,gOn=false,lastT=performance.now();
+function loop(t){
+  const dt=Math.min(.05,Math.max(0,(t-lastT)/1000));lastT=t;
+  const s=scrollY,dv=s-lastS;lastS=s;vel+=(dv-vel)*.1;
+  const wr=WR.vis&&!WR.stat?work.getBoundingClientRect():null;
+  if(!document.body.classList.contains('locked')){if(dv>4&&s>200){nav.classList.add('hide');document.body.classList.add('nh')}else if(dv<-4){nav.classList.remove('hide');document.body.classList.remove('nh')}}
+  if(fine){rx+=(mx-rx)*.16;ry+=(my-ry)*.16;cring.style.transform=`translate(${rx.toFixed(1)}px,${ry.toFixed(1)}px)`;fx+=(mx-fx)*.13;fy+=(my-fy)*.13;float.style.transform=`translate3d(${fx.toFixed(1)}px,${fy.toFixed(1)}px,0)`}
+  if(!reduce){
+    mqs.forEach((m,i)=>{m.x-=(.6+Math.abs(vel)*.25)*(i%2?-1:1);if(m.x<-m.w)m.x+=m.w;if(m.x>0)m.x-=m.w;m.el.style.transform=`translate3d(${m.x.toFixed(1)}px,0,0)`});
+    ev+=(clamp(vel,-70,70)-ev)*.14;
+    if(RB.vis&&(Math.abs(ev)>.08||gOn)){gOn=Math.abs(ev)>.08;ghosts.forEach((g,k)=>{g.style.transform=`translate3d(0,${(ev*(k+1)*1.1).toFixed(1)}px,0)`;g.style.opacity=gOn?(Math.min(.6,Math.abs(ev)/18)*(k?.5:1)).toFixed(3):'0'})}
+    if(RB.vis&&!document.hidden)ribFrame(dt,s);
+  }
+  if(wr)ringFrame(wr);
+  requestAnimationFrame(loop);
+}
+requestAnimationFrame(loop);
+
+/* resize + fonts */
+let rzT,lastW=innerWidth;
+addEventListener('resize',()=>{clearTimeout(rzT);rzT=setTimeout(()=>{const mob=innerWidth<760;if(mob!==RB.mob)ribBuild();else ribLayout();if(reduce)ribFrame(0,0);if(innerWidth!==lastW){fitWM();lastW=innerWidth}ringLayout();fitDisc();mqs.forEach(m=>m.w=m.el.scrollWidth/2)},120)});
+Promise.race([document.fonts?document.fonts.ready:Promise.resolve(),new Promise(r=>setTimeout(r,1800))]).then(()=>{fitWM();root.classList.add('fl');mqs.forEach(m=>m.w=m.el.scrollWidth/2)});
+if(document.fonts)document.fonts.ready.then(()=>{fitWM();fitDisc();mqs.forEach(m=>m.w=m.el.scrollWidth/2)});
+
+/* clock */
+function clock(){try{const t=new Date().toLocaleTimeString('it-IT',{timeZone:'Europe/Rome',hour:'2-digit',minute:'2-digit'});document.getElementById('clock').textContent='Milano '+t;document.getElementById('clock2').textContent='Milano — '+t}catch(e){}}clock();setInterval(clock,30000);
+
+/* copy */
+async function copy(txt,note,key){try{await navigator.clipboard.writeText(txt);note.textContent=T('copied')}catch(e){note.textContent=txt}setTimeout(()=>note.textContent=T(key),2200)}
+document.getElementById('mail').addEventListener('click',e=>copy(e.currentTarget.dataset.copy,document.getElementById('mailnote'),'copyHint'));
+document.querySelectorAll('.cbtn').forEach(b=>b.addEventListener('click',()=>copy(b.dataset.copy,b.querySelector('.label'),'telCopy')));
+
+/* ---------- theme ---------- */
+function syncThemeLabels(){const d=theme()==='d';document.querySelectorAll('[data-tl]').forEach(s=>s.textContent=d?T('tLight'):T('tDark'));document.querySelectorAll('[data-tlf]').forEach(s=>s.textContent=d?T('mLight'):T('mDark'));document.querySelectorAll('[data-theme-toggle]').forEach(b=>b.setAttribute('aria-label',d?T('toLight'):T('toDark')))}
+function vt(update,ev){
+  if(document.startViewTransition&&!reduce){if(ev&&ev.clientX){root.style.setProperty('--vx',ev.clientX+'px');root.style.setProperty('--vy',ev.clientY+'px')}document.startViewTransition(update)}else update();
+}
+function setTheme(next,ev){
+  vt(()=>{root.classList.add('no-tr');untint(true);root.setAttribute('data-theme',next);try{localStorage.setItem('mz-theme',next)}catch(e){}syncThemeLabels();paintWork();if(current)paintProject(current);requestAnimationFrame(()=>requestAnimationFrame(()=>root.classList.remove('no-tr')))},ev);
+}
+document.querySelectorAll('[data-theme-toggle]').forEach(b=>b.addEventListener('click',e=>setTheme(theme()==='d'?'light':'dark',e)));
+syncThemeLabels();
+
+/* ---------- project page ---------- */
+const pj=document.getElementById('pj'),pjbody=document.getElementById('pjbody');
+let current=null,lbList=[],lbi=0;
+function paintProject(p){const c=p.pal[theme()];pj.style.setProperty('--bg',c[0]);pj.style.setProperty('--fg',c[1]);pj.style.setProperty('--red',c[2]);const sw=pj.querySelector('.sw');if(sw)sw.innerHTML=swHTML(p)}
+function swHTML(p){return p.pal[theme()].map(c=>`<span><i style="background:${c}"></i>${c}</span>`).join('')}
+const ar=(id,n)=>meta(`${id}/${typeof n==='object'?n.p:n}`).a;
+function vidHTML(id,n,a){
+  const st=`style="flex:${a} 1 0;aspect-ratio:${a};--a:${a}"`;
+  return n.c?`<figure class="vid ctl" ${st}><video src="img/${id}/${n.v}" poster="img/${id}/${n.p}.webp" controls playsinline preload="metadata" aria-label="${T('film')}"></video></figure>`
+    :`<figure class="vid" ${st}><video src="img/${id}/${n.v}" poster="img/${id}/${n.p}-s.webp" muted loop playsinline preload="none" data-loop aria-label="${T('excerpt')}"></video></figure>`;
+}
+function carHTML(id,list){
+  return `<div class="car-w"><div class="car" tabindex="0" role="region" aria-label="${T('gallery')}">`+list.map(n=>`<figure data-c="view" data-ct="${T('cDrag')}" style="--a:${ar(id,n)}">${imgTag(id,n,{sizes:'(max-width:900px) 80vw, 40vw'})}</figure>`).join('')
+    +`</div><div class="car-ui label"><span class="car-n"><b>01</b> / ${pad(list.length)}</span><span class="car-bar"><i></i></span><span class="car-ar"><button class="cp" data-c="link" aria-label="${T('prev')}">←</button><button class="cn" data-c="link" aria-label="${T('next')}">→</button></span></div></div>`;
+}
+function rowHTML(id,r){
+  if(!Array.isArray(r)){if(r.car)return carHTML(id,r.car);return r.label?`<p class="rlabel label">${Tp(r.label)}</p>`:''}
+  const tot=r.reduce((s,x)=>s+ar(id,x),0);
+  const cls=r.length===1?' solo':r.length===2?' m-stack':(r.length>=4||tot>2.4?' many':'');
+  return `<div class="row${cls}">`+r.map(n=>{const a=ar(id,n);
+    if(typeof n==='object')return vidHTML(id,n,a);
+    return `<figure data-c="view" data-ct="${T('cZoom')}" style="flex:${a} 1 0;aspect-ratio:${a};--a:${a}">${imgTag(id,n,{sizes:`(max-width:900px) ${cls===' many'?80:100}vw, ${Math.round(100*a/tot)}vw`})}</figure>`}).join('')+'</div>';
+}
+function rowsHTML(p,rows){return (rows||p.rows).map(r=>r==='Q'?(p.quote?`<p class="pj-quote">${Tx(p,'quote')}</p>`:''):rowHTML(p.id,r)).join('')}
+function creditsHTML(c){return c?`<dl class="credits">${c.map(x=>`<div><dt class="label">${Tp(x[0])}</dt><dd>${Tp(x[1])}</dd></div>`).join('')}</dl>`:''}
+function chapHTML(p,c,i){const x=TXp(p),tt=x&&x.ch&&x.ch[i]?x.ch[i]:c.text;return `<section class="chap"><div class="sub-h"><h3><span class="label">${pad(i+1)}</span>${Tp(c.t)}</h3><span class="label">${Tp(c.m||'')}</span></div>${tt&&tt.length?`<div class="chap-text">${tt.map(s=>`<p>${s}</p>`).join('')}</div>`:''}<div class="rows">${rowsHTML(p,c.rows)}</div>${creditsHTML(c.credits)}</section>`}
+function coverHTML(p){
+  const im=imgTag(p.id,p.cover,{eager:1,alt:p.tp,sizes:p.cp?'(max-width:900px) 70vw, 45vw':'100vw'});
+  return p.cp?`<figure class="pj-cover logo" data-c="view" data-ct="${T('cZoom')}"><div class="lg">${im}</div></figure>`:`<figure class="pj-cover" data-c="view" data-ct="${T('cZoom')}">${im}</figure>`;
+}
+
+/* horizontal carousel: drag (mouse) with inertia, native swipe on touch, arrows + progress */
+function initCar(w){
+  const car=w.querySelector('.car'),figs=[...car.children],th=w.querySelector('.car-bar i'),num=w.querySelector('.car-n b'),bp=w.querySelector('.cp'),bn=w.querySelector('.cn');
+  const pl=()=>parseFloat(getComputedStyle(car).paddingLeft)||0;
+  const idx=()=>{const sl=car.scrollLeft;if(sl>=car.scrollWidth-car.clientWidth-2)return figs.length-1;const p0=pl();let b=0,bd=1e9;figs.forEach((f,i)=>{const d=Math.abs(f.offsetLeft-p0-sl);if(d<bd){bd=d;b=i}});return b};
+  const upd=()=>{const sw=car.scrollWidth,cw=car.clientWidth,sl=car.scrollLeft,f=Math.min(1,cw/sw);th.style.width=(f*100).toFixed(2)+'%';th.style.transform=`translateX(${(sl/cw*100).toFixed(2)}%)`;num.textContent=pad(idx()+1);bp.disabled=sl<=2;bn.disabled=sl>=sw-cw-2};
+  const go=d=>{const i=clamp(idx()+d,0,figs.length-1);car.scrollTo({left:figs[i].offsetLeft-pl(),behavior:reduce?'auto':'smooth'})};
+  car.addEventListener('scroll',upd,{passive:true});
+  bp.addEventListener('click',()=>go(-1));bn.addEventListener('click',()=>go(1));
+  let down=false,moved=false,x0=0,s0=0,lx=0,lt=0,v=0,raf=0,pid=0;
+  car.addEventListener('pointerdown',e=>{if(e.pointerType!=='mouse'||e.button!==0)return;cancelAnimationFrame(raf);down=true;moved=false;x0=lx=e.clientX;s0=car.scrollLeft;lt=performance.now();v=0;pid=e.pointerId});
+  car.addEventListener('pointermove',e=>{if(!down)return;const dx=e.clientX-x0;if(!moved){if(Math.abs(dx)<6)return;moved=true;car.classList.add('drag');try{car.setPointerCapture(pid)}catch(_){}}car.scrollLeft=s0-dx;const now=performance.now(),dt=Math.max(1,now-lt);v=v*.5+(e.clientX-lx)/dt*.5;lx=e.clientX;lt=now});
+  const end=()=>{if(!down)return;down=false;car.classList.remove('drag');if(moved&&!reduce&&Math.abs(v)>.05){let last=performance.now();const glide=now=>{const dt=Math.min(40,now-last);last=now;car.scrollLeft-=v*dt;v*=Math.pow(.92,dt/16);if(Math.abs(v)>.02)raf=requestAnimationFrame(glide)};raf=requestAnimationFrame(glide)}};
+  car.addEventListener('pointerup',end);car.addEventListener('pointercancel',end);
+  car.addEventListener('click',e=>{if(moved){e.preventDefault();e.stopPropagation();moved=false}},true);
+  car.addEventListener('dragstart',e=>e.preventDefault());
+  if('ResizeObserver' in window)new ResizeObserver(upd).observe(car);
+  upd();
+}
+
+function openP(id,keep){
+  const i=IDX.findIndex(p=>p.id===id);if(i<0)return;const p=IDX[i],nx=IDX[(i+1)%IDX.length];
+  const wasOpen=pj.classList.contains('open');current=p;fhide();
+  const render=()=>{
+    const lead=Tx(p,'lead'),body=Tx(p,'body')||[];
+    pjbody.innerHTML=`
+    <header class="pj-hero"><div class="label"><span><b>${pad(i+1)}</b> / ${pad(IDX.length)}</span><span>${Tp(p.cat)}</span><span>${p.year}</span></div>
+      <h2 class="split">${p.t}</h2><p class="pj-sub">${Tp(p.sub)}</p>
+      <dl class="pj-info"><div><dt class="label">${T('role')}</dt><dd>${Tp(p.role)}</dd></div><div><dt class="label">${T('client')}</dt><dd>${Tp(p.client)}</dd></div><div><dt class="label">${T('disc')}</dt><dd>${p.d.map(k=>`<span class="tag">${Td(k).plain}</span>`).join('')}</dd></div><div><dt class="label">${T('year')}</dt><dd>${p.year}</dd></div><div><dt class="label">${T('palette')}</dt><dd class="sw">${swHTML(p)}</dd></div></dl></header>
+    ${p.cover?coverHTML(p):''}
+    ${lead||body.length?`<section class="pj-text">${lead?`<p class="lead">${lead}</p>`:''}<div class="body">${body.map(b=>`<p>${b}</p>`).join('')}</div></section>`:''}
+    ${p.rows.length?`<div class="rows">${rowsHTML(p)}</div>`:''}
+    ${(p.chapters||[]).map((c,k)=>chapHTML(p,c,k)).join('')}
+    ${creditsHTML(p.credits)}
+    <a class="pj-next" href="#${nx.id}" data-c="view" data-ct="${T('cNext')}"><span class="label">${T('nextP')}</span><h4>${nx.t}</h4><img src="img/${nx.id}/${thumb(nx)}-s.webp" alt=""></a>`;
+    pjbody.classList.toggle('bare',!p.cover&&!lead&&!body.length);
+    document.getElementById('pjcnt').textContent=`${pad(i+1)} / ${pad(IDX.length)}`;
+    paintProject(p);
+    const h=pjbody.querySelector('.split');splitWords(h);
+    if(keep){pj.scrollTop=keep.top;h.classList.add('in');const ci=pjbody.querySelector('.pj-cover img');if(ci&&!ci.complete)ci.addEventListener('load',()=>{pj.scrollTop=keep.top},{once:true})}
+    else{pj.scrollTop=0;setTimeout(()=>h.classList.add('in'),wasOpen?120:380)}
+    const pio=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');pio.unobserve(e.target)}}),{root:pj,threshold:.08});
+    pjbody.querySelectorAll('.row figure,.car figure').forEach(f=>pio.observe(f));
+    const vio2=new IntersectionObserver(es=>es.forEach(e=>{const v=e.target;if(e.isIntersecting){if(v.hasAttribute('data-loop')&&!reduce)v.play().catch(()=>{})}else if(!v.paused)v.pause()}),{root:pj,threshold:.25});
+    pjbody.querySelectorAll('video').forEach(v=>{vio2.observe(v);if(v.controls)v.addEventListener('play',()=>pjbody.querySelectorAll('video[controls]').forEach(o=>{if(o!==v&&!o.paused)o.pause()}))});
+    pjbody.querySelectorAll('.car-w').forEach(initCar);
+    lbList=[...pjbody.querySelectorAll('.pj-cover img,.row img,.car img')];
+    lbList.forEach((im,j)=>im.closest('figure').addEventListener('click',()=>openLb(j)));
+  };
+  untint(true);
+  if(keep){render();return}
+  if(wasOpen&&!reduce){pjbody.classList.add('swap');setTimeout(()=>{render();requestAnimationFrame(()=>pjbody.classList.remove('swap'))},380)}
+  else{render();pj.classList.add('open');pj.setAttribute('aria-hidden','false');document.body.classList.add('locked')}
+}
+function closeP(){pj.querySelectorAll('video').forEach(v=>v.pause());pj.classList.remove('open');pj.setAttribute('aria-hidden','true');document.body.classList.remove('locked');cring.classList.remove('big','link');current=null}
+function step(d){if(!current)return;const i=IDX.indexOf(current);location.hash=IDX[(i+d+IDX.length)%IDX.length].id}
+document.getElementById('pjprev').addEventListener('click',()=>step(-1));
+document.getElementById('pjnext').addEventListener('click',()=>step(1));
+document.getElementById('pjclose').addEventListener('click',()=>{if(P.some(p=>'#'+p.id===location.hash))history.pushState('',document.title,location.pathname+location.search);closeP()});
+function route(){const id=location.hash.slice(1);if(P.some(p=>p.id===id))openP(id);else if(pj.classList.contains('open'))closeP()}
+addEventListener('hashchange',route);
+
+/* lightbox */
+const lb=document.getElementById('lb'),lbimg=lb.querySelector('img'),lbct=lb.querySelector('.ct');
+function showLb(j){lbi=(j+lbList.length)%lbList.length;const s=lbList[lbi].getAttribute('src').replace('-s.webp','.webp');lbimg.src=s;lbct.textContent=(lbi+1)+' / '+lbList.length}
+function openLb(j){showLb(j);lb.classList.add('on')}
+lb.querySelector('.x').onclick=()=>lb.classList.remove('on');
+lb.querySelector('.pr').onclick=e=>{e.stopPropagation();showLb(lbi-1)};
+lb.querySelector('.nx').onclick=e=>{e.stopPropagation();showLb(lbi+1)};
+lb.addEventListener('click',e=>{if(e.target===lb)lb.classList.remove('on')});
+addEventListener('keydown',e=>{
+  if(lb.classList.contains('on')){if(e.key==='Escape')lb.classList.remove('on');if(e.key==='ArrowRight')showLb(lbi+1);if(e.key==='ArrowLeft')showLb(lbi-1);return}
+  if(pj.classList.contains('open')){if(e.key==='Escape')document.getElementById('pjclose').click();const tg=e.target;if(tg&&tg.closest&&tg.closest('.car,video,select'))return;if(e.key==='ArrowRight')step(1);if(e.key==='ArrowLeft')step(-1)}
+});
+
+/* ---------- language ---------- */
+function syncLangUI(){document.querySelectorAll('[data-lang]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.lang===LANG)));document.querySelectorAll('[data-lsel]').forEach(s=>s.value=LANG)}
+function setLang(l,ev){
+  if(!LANGS.includes(l)||l===LANG)return;
+  vt(()=>{
+    LANG=l;try{localStorage.setItem('mz-lang',l)}catch(e){}
+    fhide();
+    document.querySelectorAll('[data-scr]').forEach(el=>{if(el._s&&el.dataset.txt)el.textContent=el.dataset.txt;el._g=(el._g||0)+1;el._s=0;delete el.dataset.txt});
+    applyStatic();
+    I18N.forEach(o=>{if(o.el.closest('.split'))splitWords(o.el)});
+    renderDisc();renderIndex();renderWGrid();workText();renderMq();mqs.forEach(m=>m.w=m.el.scrollWidth/2);
+    syncThemeLabels();syncLangUI();
+    if(current)openP(current.id,{top:pj.scrollTop});
+  },ev);
+}
+document.querySelectorAll('[data-lang]').forEach(b=>b.addEventListener('click',e=>setLang(b.dataset.lang,e)));
+document.querySelectorAll('[data-lsel]').forEach(s=>{s.innerHTML=LANGS.map(l=>`<option value="${l}">${l.toUpperCase()}</option>`).join('');s.addEventListener('change',()=>{const r=s.getBoundingClientRect();setLang(s.value,{clientX:r.left+r.width/2,clientY:r.top+r.height/2})})});
+syncLangUI();
+
+if(location.hash)route();
+</script>
+</body>
+</html>
